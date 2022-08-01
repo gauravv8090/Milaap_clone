@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
+
+    <style>
+      #container {
+        /* border: 2px dashed crimson; */
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        align-items: flex-start;
+        width: 100%;
+        margin: auto;
+        margin-top: 420px;
+        padding: 10px 0px;
+        box-shadow: 0 -1px 20px 0 rgb(156 51 83 / 20%);
+      }
+
+      #container > .dd1, .dd2, .dd3, .dd4 {
+        /* border: 2px solid blue; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        margin-left: 20px;
+        justify-content: left;
+      }
+      #container > .dd1 > div {
+        /* border: 1px dashed green; */
+        margin-bottom: 10px;
+        /* width: 120px; */
+      }
+      #container > .dd2 > div {
+        /* border: 1px dashed green; */
+        margin-bottom: -10px;
+        /* width: 150px; */
+      }
+      #container > .dd3 > div {
+        /* border: 1px dashed green; */
+        line-height: 20px;
+      }
+      #container > .dd3 > :nth-child(4) > h5 {
+        margin-top: 20px;
+      }
+      #container > .dd3 {
+        /* border: 2px dashed red; */
+        margin-right: 160px;
+        width: 100px;
+      }
+      #container > .dd4 {
+        /* border: 2px dashed red; */
+        margin-right: 10px;
+        margin-left: -10px;
+      }
+      #container > .dd4 > div > :nth-child(1) {        
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* border: 3px solid purple; */
+        margin-bottom: 25px;
+        width: 250px;
+      }
+      #container > .dd4 > div > :nth-child(1) > div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* border: 1px dashed green; */
+      }
+      #container > .dd4 > div > :nth-child(1) > :nth-child(2) {
+        border: 2px solid ;
+        text-align: center;
+        color: #9c3353;
+        width: auto;
+        /* background-color: red; */
+      }
+
+      #container > .dd4 > div {
+        border: 2px dashed crimson;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 200px;
+        align-items: center;
+        margin: 10px 0px;
+      }
+
+      #container > .dd5 {
+        /* border: 2px dashed black; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 25px;
+        margin-left: -20px;
+        margin-right: 20px;
+        text-align: center;
+        padding: 20px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background-color: rgb(250, 248, 248);
+      }
+      #container > .dd5 > div {
+        /* border: 2px solid green; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+        margin-right: 60px;
+        width: 100%;
+      }
+      #container > .dd5 > :nth-child(2) > div {
+        /* border: 2px solid crimson; */
+        margin-bottom: -30px;
+        margin-left: -20px;
+        margin-right: 20px;
+        padding: 10px;
+      }
+      #container > .dd5 > :nth-child(2) > :nth-child(3) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      #container > .dd5 > :nth-child(2) > :nth-child(3) > div {
+        margin-bottom: 10px;
+      }
+      span {
+        color: #9c3353;
+      }
+      button {
+        background-color: #9c3353;
+        border: none;
+        border-radius: 50px;
+        margin: 30px 0px;
+        width: 220px;
+        padding: 15px 20px;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      h4 {
+        color: #9c3353;
+      }
+      h5 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        margin-bottom: 0px;
+      }
+      P {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: rgb(75, 73, 73);
+        font-size: smaller;
+      }
+      hr {
+        width: 10px;
+        border: 1px solid black;
+        margin-top: 0px;
+      }
+      #blackBottom {
+        background-color: #212121;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        color: white;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+      }
+      
+      #blackBottom > div > h6 {
+        color: white;
+        margin-top: 10px;
+      }
+
+      #blackBottom > div > p {
+        color: gray;
+        margin-top: -15px;
+        margin-bottom: 5px;
+      }
+
+      @media screen and (min-width: 480px) and (max-width: 1024px) {
+        #container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        #container > .dd1, .dd2, .dd3 {                
+          grid-template-columns: repeat(3, 1fr);       
+        }
+        #container > .dd4 > div > :nth-child(1) {        
+          grid-template-columns: repeat(2, 1fr);                
+        }
+        #container > .dd5 {
+          grid-template-columns: repeat(2, 1fr);
+        }      
+        #blackBottom {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 0px) and (max-width: 1023px) {
+        #container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        #container > .dd1, .dd2, .dd3 {               
+          grid-template-columns: repeat(1, 1fr);
+        }
+        #container > .dd4 > div > :nth-child(1) {        
+          grid-template-columns: repeat(1, 1fr);                
+        }
+        #container > .dd5 {
+          grid-template-columns: repeat(1, 1fr);
+        } 
+        #blackBottom {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- div 1 starting from here -->
+    <div id="container">
+      <div class="dd1">
+        <h5>Donate towards</h5>
+        <hr align="left">
+        <div>
+          <div></div>
+          <div>
+            <p>Medical</p>
+          </div>
+        </div>
+        <div>
+          <div></div>
+          <div>
+            <p>Memorial</p>
+          </div>
+        </div>
+        <div>
+          <div></div>
+          <div>
+            <p>Education</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- div 2 starting form here -->
+      <div class="dd2">
+        <h5>Milaap</h5>
+        <hr align="left">
+        <div>
+          <p><span>About us</span></p>
+        </div>
+        <div>
+          <p><span>Press and media</span></p>
+        </div>
+        <div>
+          <p><span>Team</span></p>
+        </div>
+        <div>
+          <p><span>Careers</span></p>
+        </div>
+        <div>
+          <p><span>Contact</span></p>
+        </div>
+        <div>
+          <p><span>Board</span></p>
+        </div>
+        <div>
+          <p><span>Thank you</span></p>
+        </div>
+      </div>
+
+      <!-- div 3 starting from here -->
+      <div class="dd3">
+        <h5>Indian office address</h5>
+        <hr align="left">
+        <div>
+          <p>
+            Milaap Social Ventures India Pvt. Ltd. ClayWorks Create-building,
+            11th KM Create Campus, Arakere Bannerghatta Rd, Bangalore,
+            Karnataka, India 560076
+          </p>
+        </div>
+        <div>
+          <h5>Supported by</h5>
+          <hr align="left">
+          <div>
+            <img
+              width="200px"
+              src="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/43279012100/original/NQaEc3sL6Gso96fAdUWRiHZ5G9UUaHgUog.png?1639064459"
+              alt="Supported"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- div 4 starting from here -->
+      <div class="dd4">
+        <button>Start a Fundraiser</button>
+          <div>
+            <div>
+              <p>Pricing</p>
+            </div>
+            <div>
+              <p>Reviews</p>
+            </div>
+            <div>
+              <p>FAQs and tips</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <p>Find us on</p>
+            </div>
+            <div>
+              <img  width="130px"
+                src="https://www.womensurgeons.org/resource/resmgr/images/econnections/social2.jpg"
+                alt="Social media"
+              />
+          </div>          
+        </div>
+      </div>
+
+      <!-- div 5 starting from here -->
+      <div class="dd5">
+        <div>
+          <img
+            style="width: 200px"
+            src="https://pages.milaap.org/wp-content/uploads/2021/10/download-app.png"
+            alt="playStore phone image"
+          />
+        </div>
+        <div>
+          <div>
+            <p>Set up, manage and promote your fundraiser with Milaap app</p>
+          </div>
+          <div>
+            <h4>Download Now!</h4>
+          </div>
+          <div>
+            <div>
+              <img
+                style="width: 130px"
+                src="https://assets.milaap.org/assets/play-store-btn-3cb8952867b0552ef1377bf63004d9d6613fd11da71e8446e7e6be1fd61f3182.png"
+                alt="Play store"
+              />
+            </div>
+            <div>
+              <img
+                style="width: 130px"
+                src="https://assets.milaap.org/assets/app-store-btn-0ae1713b1521ee08942a97e257b38ac5050a6cf70df4084b3f4ab234e60ea51f.png"
+                alt="Apple store"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="blackBottom">
+      <div>        
+          <h6>© 2010 - 2022 milaap.org All rights reserved</h6>       
+      </div>
+      <div>
+        <p>Security & Privacy  Conditions of use</p>
+      </div>
+    </div>
+  </body>
+</html>
