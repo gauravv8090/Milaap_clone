@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundraiser</title>
+    <link rel="stylesheet" href="/Milaap_clone/fundRaiser/fund.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  </head>
+  <body>
+    <!-- for nav in fund -->
+    <nav id="fund-nav">
+      <div class="fund-nav-content">
+        <img src="/Milaap_clone/fundRaiser/img-fund/logo.png" alt="logo" />
+        <p>Setup fundraiser</p>
+      </div>
+    </nav>
+    <div id="fund-nav-2">
+      <p>Basic Details</p>
+    </div>
+
+    <div id="fund-cause">
+      <label for="">I am raising funds for a/an</label>
+      <a href="#"> medical <span class="trangle"></span></a>
+
+      <label for="">cause</label>
+    </div>
+
+    <section id="fund-cause-2">
+      <div class="fund-cause-2-content">
+        <span class="material-symbols-outlined">
+          done
+          </span>
+        <img class="fund-cause-2-icon" src="/Milaap_clone/fundRaiser/img-fund/svg0.svg" alt="svg0" /> 
+        <p>Medical</p>
+      </div>
+
+      <div class="fund-cause-2-content">
+        <span class="material-symbols-outlined">
+          done
+          </span>
+        <img class="fund-cause-2-icon" src="/Milaap_clone/fundRaiser/img-fund/svg1.svg" alt=svg1" />
+        <p>Education</p>
+      </div>
+
+      <div class="fund-cause-2-content">
+        <span class="material-symbols-outlined">
+          done
+          </span>
+        <img class="fund-cause-2-icon" src="/Milaap_clone/fundRaiser/img-fund/svg2.svg" alt="svg2" />
+        <p>Memorial</p>
+      </div>
+
+      <div class="fund-cause-2-content">
+        <span class="material-symbols-outlined">
+          done
+          </span>
+        <img class="fund-cause-2-icon" src="/Milaap_clone/fundRaiser/img-fund/svg3.svg" alt="svg3" />
+        <p>Others</p>
+      </div>
+    </section>
+
+
+    <section id="fund-form">
+      <label for="fund-form-name">Name</label><br>
+      <input id="fund-form-name" type="text" placeholder="Enter Name"><br>
+
+      <label for="fund-form-email">Email</label><br>
+      <input id="fund-form-email" type="email" placeholder="Enter Email">
+
+      <div class=" fund-mobile-num" >
+        <select name="" id="fund-select-country" onchange="countryCode()">
+          <option value="select country">Select Country</option>
+          <option value="ind">&#127470;&#127475; IN</option>
+          <option value="russia">&#127479;&#127482; RU</option>
+          <option value="israel">&#127470;&#127473; IL</option>
+        </select>
+        <input id="fund-select-number" type="tel" placeholder="Enter Number">
+      </div>
+
+    </section>
+
+    <section id="fund-submit">
+            <input class="fund-submit-button" type="button" value="SUBMIT">
+    </section>
+  </body>
+</html>
+<script>
+  function countryCode(){
+
+    var countryCode = document.getElementById("fund-select-country").value;
+    if(countryCode === "select country"){
+      document.getElementById("fund-select-number").value="";
+    }
+    else if(countryCode === "ind"){
+      document.getElementById("fund-select-number").value="+91 ";
+    }
+    else if(countryCode === "russia"){
+      document.getElementById("fund-select-number").value="+7 ";
+    }
+    else if(countryCode === "israel"){
+      document.getElementById("fund-select-number").value="+972 ";
+    }
+
+  }
+
+</script>
