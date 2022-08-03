@@ -46,10 +46,11 @@
             font-stretch: expanded;
         }
         #adress{
-            height: 100vh;
+            /* height: 100vh; */
             width: 70%;
             margin: auto;
             margin-top: 20px;
+            margin-bottom: 100px;
             /* border: 2px red dotted; */
         }
         #location{
@@ -175,6 +176,7 @@
       background-color: #339c8e;
       border-radius: 10px;
       display: flex;
+      cursor: pointer; 
     }
     #tags>div>div{
         height: 50px;
@@ -243,6 +245,14 @@
     background-color: #9c3353;
     color: white;
    }
+   #dd{
+    display: flex;
+    margin-top: 10px;
+   }
+   #mm{
+    margin-top: 10px;
+    display: flex;
+   }
     </style>
 </head>
 <body>
@@ -281,9 +291,7 @@
                 <p>Milaap Social Ventures India Pvt. Ltd. ClayWorks Create – building,11th KM Create Campus, Arakere Bannerghatta Rd, Bangalore, Karnataka, India 560076</p>
                 <span class="material-symbols-outlined">mail</span>
                 <a href="feedback@milaap.org">feedback@milaap.org</a><br>
-                <span class="material-symbols-outlined">
-                    call
-                    </span>
+                <span class="material-symbols-outlined">call</span>
                  <a href="">9889889889</a>
                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939095.0356595516!2d74.07252519654907!3d15.388802646666335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae156d2a5730cd%3A0x154cceb8e85dfe57!2sMilaap!5e0!3m2!1sen!2sin!4v1659293876608!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 
@@ -328,23 +336,124 @@
         </div>
      </div>
      <!-- <input type="text" id="suggst" placeholder="You can type any suggestion or queries you might have. Let us help you!"> -->
-     <textarea name="" id="suggst" cols="30" rows="10">You can type any suggestions or queries you might have. Let us help you!</textarea>
+     <textarea name="" id="suggst" cols="30" rows="10" placeholder="You can type any suggestions or queries you might have. Let us help you!"></textarea>
      <button id="last">Send</button>
     </div>
 </body>
 </html>
 <script>
-    document.querySelector(".yes").addEventListener("click", addfun);
-    var country= document.querySelector(".yes");
-    console.log(country);
-         var cdata= document.getElementById("data");
-         var Cobj= {
-            add:"Milaap Social Ventures Pte. Ltd",
-         }
-         function addfun(){
-            if(country.innerText== "INDIA"){
-               cdata.innerText= "ACCEPTED";
-               console.log("yes");
+     var doc=  document.querySelectorAll(".yes");
+            //    document.querySelector(".yes").addEventListener("click", loChange);
+            //    function location(){}
+     console.log(doc);
+          var cdata= document.getElementById("data");
+     doc.forEach(function (elem){
+        console.log(elem.innerHTML);
+        elem.addEventListener("click", function(){ change(elem)});
+        // if(elem.innerHTML=="US"){
+        // cdata.innerText= "yes";
+        // }
+     })
+    //    var usDATA= {
+    //     add: "Milaap Social Ventures Pte. Ltd.",
+    //     add1: "C/O Jungle Ventures,",
+    //     add3: "79 Ayer Rajah Crescent, Block 79,",
+    //     add4: "Singapore 139955"
+    //    }
+    //    localStorage.setItem("usData", JSON.stringify( usDATA));
+    //    var ans= JSON.parse(localStorage.getItem("usData"));
+    //    console.log(ans);
+    var USp= document.createElement("p");
+    USp.innerText= "Milaap Social Ventures  USA Pvt. Ltd.";
+     var USp2= document.createElement("p");
+     USp2.innerText= "311 North Market Street - Suite 200";
+     var USp3= document.createElement("p");
+     USp3.innerText= "Dallas, TX 75202";
+     var calUS= document.createElement("span");
+     calUS.setAttribute("class", "material-symbols-outlined");
+     calUS.innerText= "call";
+     var USp4= document.createElement("a");
+     USp4.innerText= "   +1 (805) 590-7978";
+     var dd= document.createElement("div");
+          dd.setAttribute("id", "dd");
+     dd.append(  calUS, USp4  );
+     var mailUS= document.createElement("span");
+     mailUS.setAttribute("class", "material-symbols-outlined");
+     mailUS.innerText= "mail";
+     var usp5 = document.createElement("a");
+     usp5.innerText= "feedback@milaap.org";
+     var mm= document.createElement("div");
+          dd.setAttribute("id", "mm");
+          mm.append(mailUS, usp5);
+          
+          var Sin= document.createElement("p");
+           Sin.innerText= "Milaap Social Ventures  USA Pvt. Ltd.";
+           var  Sin2= document.createElement("p");
+            Sin2.innerText= "C/O Jungle Ventures,";
+           var Sin3= document.createElement("p");
+            Sin3.innerText= "79 Ayer Rajah Crescent, Block 79,";
+           var Sin9= document.createElement("p");
+            Sin9.innerText= "Singapore 139955";
+        //    var calUS= document.createElement("span");
+        //    calUS.setAttribute("class", "material-symbols-outlined");
+        //    calUS.innerText= "call";
+           var  Sin4= document.createElement("a");
+            Sin4.innerText= "  (+65) 3129 5466";
+           var dd= document.createElement("div");
+                dd.setAttribute("id", "dd");
+           dd.append( calUS, Sin4    );
+        //    var mailUS= document.createElement("span");
+        //    mailUS.setAttribute("class", "material-symbols-outlined");
+        //    mailUS.innerText= "mail";
+           var  Sin5 = document.createElement("a");
+            Sin5.innerText= "mayukh@milaap.org";
+           var mm= document.createElement("div");
+                dd.setAttribute("id", "mm");
+                mm.append(mailUS,  Sin5);
+
+
+    function change(ele){
+        if(ele.innerHTML=="US"){
+            cdata.innerText= "";
+            document.getElementById("data").append(USp);
+            document.getElementById("data").append(USp2);
+            document.getElementById("data").append(USp3); 
+            document.getElementById("data").append(mm); 
+            document.getElementById("data").append(dd); 
+            // document.getElementById("data").append(USp4); 
+            
+            console.log("yes");
+        }
+
+        else if(ele.innerHTML=="SINGAPORE"){
+                cdata.innerText= "";
+                document.getElementById("data").append(Sin);
+                document.getElementById("data").append(Sin2);
+                document.getElementById("data").append(Sin3);
+                document.getElementById("data").append(Sin9);
+                document.getElementById("data").append(mm);
+                document.getElementById("data").append(dd);
+                console.log("yes123");
             }
          }
+         document.getElementById("last").addEventListener("click", lastfun);
+          function lastfun(){
+            alert("Your suggestion has been submitted");
+          }
+        //  function change(ele){
+        //     if(ele.innerHTML=="SINGAPORE"){
+        //         console.log("yes123");
+        //     }
+        //  }
+    // var country= document.querySelector(".yes");
+    // console.log(country);
+    //      var Cobj= {
+    //         add:"Milaap Social Ventures Pte. Ltd",
+    //      }
+    //      function addfun(){
+    //         if(country.innerText== "INDIA"){
+               
+    //            console.log("yes");
+    //         }
+    //      }
 </script>
