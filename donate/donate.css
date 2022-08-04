@@ -275,7 +275,242 @@
 }
 
 
+#container {
+    /* border: 2px dashed crimson; */
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: flex-start;
+    width: 100%;
+    margin: auto;
+    margin-top: 420px;
+    padding: 10px 0px;
+    box-shadow: 0 -1px 20px 0 rgb(156 51 83 / 20%);
+  }
 
+  #container > .dd1, .dd2, .dd3, .dd4 {
+    /* border: 2px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    margin-left: 20px;
+    justify-content: left;
+  }
+  #container > .dd1 > div {
+    /* border: 1px dashed green; */
+    margin-bottom: 10px;
+    /* width: 120px; */
+  }
+  #container > .dd2 > div {
+    /* border: 1px dashed green; */
+    margin-bottom: -10px;
+    /* width: 150px; */
+  }
+  #container > .dd3 > div {
+    /* border: 1px dashed green; */
+    line-height: 20px;
+  }
+  #container > .dd3 > :nth-child(4) > h5 {
+    margin-top: 20px;
+  }
+  #container > .dd3 {
+    /* border: 2px dashed red; */
+    margin-right: 160px;
+    width: 100px;
+  }
+
+
+  #container > .dd4 {
+    /* border: 2px dashed red; */
+    margin-right: 40px;
+    margin-left: -10px;
+  }
+
+
+  #container > .dd4 > div {
+    /* border: 2px dashed crimson; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 270px;
+    align-items: center;
+    margin: 10px 0px;
+  }
+  #container > .dd4 > :nth-child(2) > :nth-child(2) {
+    /* border: 2px dashed green; */
+    margin-left: -20px;
+  }
+  #container > .dd4 > :nth-child(2) > :nth-child(3) {
+    /* border: 2px dashed purple; */
+    margin-left: -20px;    
+  }
+  #container > .dd4 > :nth-child(3) > :nth-child(1) {
+    /* border: 2px dashed green; */
+    margin-right: -20px;
+  }
+  #container > .dd4 > :nth-child(3) > :nth-child(2){
+    /* border: 2px dashed red; */
+    margin-right: -50px;
+  }
+  
+ 
+
+  #container > .dd5 {
+    /* border: 2px dashed black; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 25px;
+    margin-left: -20px;
+    margin-right: 20px;
+    text-align: center;
+    padding: 20px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: rgb(250, 248, 248);
+  }
+  #container > .dd5 > div {
+    /* border: 2px solid green; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    margin-right: 60px;
+    width: 100%;
+  }
+  #container > .dd5 > :nth-child(2) > div {
+    /* border: 2px solid crimson; */
+    margin-bottom: -30px;
+    margin-left: -70px;
+    margin-right: 20px;
+    padding: 10px;
+  }
+  #container > .dd5 > :nth-child(2) > :nth-child(3) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #container > .dd5 > :nth-child(2) > :nth-child(3) > div {
+    margin-bottom: 10px;
+  }
+  #container > .dd2 > div > p > span {
+    color: #9c3353;
+  }
+  #container > .dd4 > button {
+    background-color: #9c3353;
+    border: none;
+    border-radius: 50px;
+    margin: 30px 20px;
+    width: 220px;
+    padding: 15px 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5ms;
+  }
+  /* #container > .dd4 > button:hover {
+    transform: ;
+    cursor: pointer;
+  } */
+
+  #container > .dd5 > :nth-child(2) > :nth-child(2) > h4 {
+    color: #9c3353;
+  }
+  
+  #container > div > h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+  #container > .dd3 > :nth-child(4) > h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+  #container > div > div > P {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(75, 73, 73);
+    font-size: smaller;
+  }
+  #container > div > div > div > P {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(75, 73, 73);
+    font-size: smaller;
+  }
+
+  #container > div > hr {
+    width: 10px;
+    border: 1px solid black;
+    margin-top: 0px;
+  }
+  #container > div > div > hr {
+    width: 10px;
+    border: 1px solid black;
+    margin-top: 0px;
+  }
+
+  #blackBottom {
+    background-color: #212121;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    color: white;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+  }
+  
+  #blackBottom > div > h6 {
+    color: white;
+    margin-top: 10px;
+  }
+
+  #blackBottom > div > p {
+    color: gray;
+    margin-top: -15px;
+    margin-bottom: 5px;
+  }
+
+  @media screen and (min-width: 720px) and (max-width: 1280px) {
+    #container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    #container > .dd1, .dd2, .dd3 {                
+      grid-template-columns: repeat(3, 1fr);       
+    }
+    #container > .dd4 > div > :nth-child(1) {        
+      grid-template-columns: repeat(2, 1fr);                
+    }
+    #container > .dd5 {
+      grid-template-columns: repeat(2, 1fr);
+    }      
+    #blackBottom {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 719px) {
+    #container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    #container > .dd1, .dd2, .dd3 {               
+      grid-template-columns: repeat(1, 1fr);
+    }
+    
+    #container > .dd4 > div {        
+      grid-template-columns: repeat(2, 1fr);                
+      margin: auto;
+      margin-left: 40px;
+      width: 100%;
+    }
+    #container > .dd4 > :nth-child(3) > :nth-child(2) {
+      /* border: 2px dashed red; */
+      margin-left: -55px;
+    }
+    #container > .dd5 {
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+    } 
+    #blackBottom {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 
 
 
