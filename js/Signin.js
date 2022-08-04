@@ -3,6 +3,7 @@ document.querySelector("form").addEventListener("submit", checkUser);
 var UserObjArr = JSON.parse(localStorage.getItem("UserObjArr")) || [];
 
 function checkUser() {
+  event.preventDefault();
   var email_address = document.querySelector("#email").value;
   var user_password = document.querySelector("#password").value;
 
@@ -22,6 +23,7 @@ function checkUser() {
 
   if (user_present) {
     alert("Sign In Successfull");
+    location.href = "index.html";
   } else {
     alert("email and password are not present in the database");
   }

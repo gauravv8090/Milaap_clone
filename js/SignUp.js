@@ -27,7 +27,7 @@ function addUser() {
   } else {
     UserObjArr.push(UserObj);
     localStorage.setItem("UserObjArr", JSON.stringify(UserObjArr));
-    alert("signup succ");
-    // location.href = "Signin.html";
+    alert("signup successful");
+    location.href = "Signin.html";
   }
 }
