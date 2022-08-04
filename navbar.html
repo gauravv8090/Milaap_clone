@@ -48,11 +48,29 @@
             </div>
             <div>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNTnKuFzx2Q3EqHYsrqQoVxWRxIu0A3pM8qADvlTxaHf2LCYJw"
-                    alt="logo">
+                    alt="logo" id="LOSINIMG">
             </div>
 
         </div>
     </div>
+    <div id="LOSIN">
+        <div > <h5>Login</h5> </div>
+        <div ><h5>Register</h5> </div>
+    </div>
 </body>
 
 </html>
+<script>
+    document.getElementById("LOSINIMG").addEventListener("click", LOginFUN);
+    var ddaa= document.getElementById("LOSIN");
+    function LOginFUN(){
+    if(ddaa.style.display === "none"){
+        ddaa.style.display = "flex";
+        ddaa.style.justifyContent= "space-around"
+        // ddaa.style.margin= "0";
+        ddaa.style.paddingTop = "15px";
+    }else{
+        ddaa.style.display = "none";
+    }
+    }
+</script>
