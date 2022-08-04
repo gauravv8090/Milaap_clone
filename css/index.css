@@ -551,6 +551,11 @@ display : none;
 
 
 /* footer css */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
 #container {
   /* border: 2px dashed crimson; */
   display: grid;
@@ -558,11 +563,12 @@ display : none;
   align-items: flex-start;
   width: 100%;
   margin: auto;
-  margin-top: 420px;
   padding: 10px 0px;
   box-shadow: 0 -1px 20px 0 rgb(156 51 83 / 20%);
 }
-
+#container > div {
+  margin-top: 20px;
+}
 #container > .dd1, .dd2, .dd3, .dd4 {
   /* border: 2px solid blue; */
   display: grid;
@@ -573,16 +579,19 @@ display : none;
 }
 #container > .dd1 > div {
   /* border: 1px dashed green; */
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 20px;
   /* width: 120px; */
 }
 #container > .dd2 > div {
   /* border: 1px dashed green; */
-  margin-bottom: -10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
   /* width: 150px; */
 }
 #container > .dd3 > div {
   /* border: 1px dashed green; */
+  margin-top: 10px;
   line-height: 20px;
 }
 #container > .dd3 > :nth-child(4) > h5 {
@@ -652,7 +661,7 @@ display : none;
 }
 #container > .dd5 > :nth-child(2) > div {
   /* border: 2px solid crimson; */
-  margin-bottom: -30px;
+  margin-bottom: -10px;
   margin-left: -70px;
   margin-right: 20px;
   padding: 10px;
@@ -679,10 +688,14 @@ display : none;
   font-weight: bold;
   transition: all 0.5ms;
 }
-/* #container > .dd4 > button:hover {
-  transform: ;
+#container > .dd4 > button:hover {
   cursor: pointer;
-} */
+}
+#container > .dd4 > button:active {
+  transform: scale(1.02);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
 #container > .dd5 > :nth-child(2) > :nth-child(2) > h4 {
   color: #9c3353;
@@ -739,16 +752,16 @@ display : none;
 
 #blackBottom > div > p {
   color: gray;
-  margin-top: -15px;
-  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1024px) {
+@media screen and (min-width: 720px) and (max-width: 1280px) {
   #container {
     grid-template-columns: repeat(2, 1fr);
   }
   #container > .dd1, .dd2, .dd3 {                
-    grid-template-columns: repeat(3, 1fr);       
+    grid-template-columns: repeat(1, 1fr);       
   }
   #container > .dd4 > div > :nth-child(1) {        
     grid-template-columns: repeat(2, 1fr);                
@@ -761,7 +774,7 @@ display : none;
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 1023px) {
+@media screen and (min-width: 0px) and (max-width: 719px) {
   #container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -770,27 +783,51 @@ display : none;
   }
   
   #container > .dd4 > div {        
-    grid-template-columns: repeat(2, 1fr);                
+    grid-template-columns: repeat(1, 1fr);                
     margin: auto;
+    margin-top: 10px;
     margin-left: 40px;
     width: 100%;
   }
+  #container > .dd4 > :nth-child(2) > div {
+    /* border: 2px solid green; */
+    margin-top: 10px;
+    width: 90%;
+  }
   #container > .dd4 > :nth-child(3) > :nth-child(2) {
     /* border: 2px dashed red; */
-    margin-left: -55px;
+    margin-left: -20px;
+    margin-top: 10px;
+    width: 90%;
   }
   #container > .dd5 {
     grid-template-columns: repeat(1, 1fr);
-    width: 100%;
+    width: 90%;
   } 
   #blackBottom {
     grid-template-columns: repeat(1, 1fr);
+    width: 100%;
   }
 }
 
 
-@media screen and (max-width:1100px){
-  #navRight>div{
-      display: none;
+
+
+/* here media screen */
+
+@media screen and (min-width: 720px) and (max-width: 1280px) {
+  #containerFirst {
+      grid-template-columns: repeat(2,1fr);
+      width: 95%;
   }
+
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 719px) {
+  #containerFirst {
+      grid-template-columns: repeat(1,1fr);
+      width: 95%;
+  }
+
 }
