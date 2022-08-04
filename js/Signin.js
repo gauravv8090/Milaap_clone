@@ -7,24 +7,21 @@ function checkUser() {
   var email_address = document.querySelector("#email").value;
   var user_password = document.querySelector("#password").value;
 
-  var user_present = false;
-
-  UserObjArr.forEach((element) => {
-    if (
-      element.email_address == email_address &&
-      element.user_password == user_password
-    ) {
-      user_present = true;
-    }
-    if (user_present) {
-      return false;
-    }
-  });
-
-  if (user_present) {
-    alert("Sign In Successfull");
-    location.href = "index.html";
+  if (email_address.length == 0 || user_password.length == 0) {
+    alert("Please enter email and password");
   } else {
-    alert("email and password are not present in the database");
+    var email_present = false;
+    UserObjArr.forEach((element) => {
+      if (element.email_address == email_address) {
+        email_present = true;
+        if (element.user_password == user_password) {
+          alert("Sign In Successfull");
+          location.href = "index.html";
+        } else {
+          alert("Password is incorrect");
+          return false;
+        }
+      }
+    });
   }
 }
