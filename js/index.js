@@ -10,6 +10,9 @@ function LOginFUN() {
     ddaa.style.display = "none";
   }
 }
+document.querySelector(".homebtn").addEventListener("click", function () {
+  location.href = "index.html";
+});
 
 document.querySelector(".donatebtn").addEventListener("click", function () {
   location.href = "donate.html";
