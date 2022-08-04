@@ -1,11 +1,11 @@
 #containerFirst {
-    border: 2px dashed crimson;
+    /* border: 2px dashed crimson; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px 30px;
     width: 1800px;
     margin: auto;
-    margin-left: 200px;
+    margin-left: 100px;
     margin-top: 50px;
 }
 #containerFirst > .box {
@@ -30,7 +30,7 @@
     border-top-right-radius: 10px;
 }
 #containerFirst > .box > :nth-child(1) {
-    border: 2px dashed blue;
+    /* border: 2px dashed blue; */
     margin-top: 5px;
     padding-left: 10px;
     font-size: x-large;
@@ -95,4 +95,81 @@
 
 /* box2 section  */
 
-
+#sideBox {
+    /* border: 2px solid blueviolet; */
+    padding: 10px;
+}
+#sideBox > .box2 {
+    /* border: 2px dashed green; */
+    padding: 10px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#sideBox > .box2 > :nth-child(1) {
+    /* border: 2px dashed red; */
+    text-align: left;
+    padding-left: 20px;
+}
+#sideBox > .box2 > :nth-child(1) > hr {
+    width:60px;
+    margin-top: -15px;
+    border: 1px solid black;
+}
+#sideBox > .box2 > :nth-child(2) {
+    /* border: 2px dashed blue; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -20px;
+}
+#sideBox > .box2 > :nth-child(2) > :nth-child(1) {
+    /* border: 2px dashed red; */
+    padding: 10px;
+}
+#sideBox > .box2 > :nth-child(2) > :nth-child(1) > img {
+    width: 30%;
+    margin-top: 10px;
+}
+#sideBox > .box2 > :nth-child(2) > :nth-child(2) {
+    /* border: 2px dashed green; */
+    margin-left: -40px;
+}
+#sideBox > .box2 > :nth-child(2) > :nth-child(2) > h3 {
+    color: #691A47;
+    margin-bottom: 5px;
+}
+#sideBox > .box2 > :nth-child(2) > :nth-child(2) > :nth-child(1) {
+    margin-bottom: -15px;
+}
+#sideBox > .box2 > :nth-child(2) > :nth-child(2) > :nth-child(3) {
+    margin-top: 0px;
+}
+#sideBox > .box2 > :nth-child(3) {
+    border-left: 3px solid #691A47;
+    background-color: #F8F8F8;
+    font-size: larger;
+    margin: 20px 15px;
+    padding: 10px 50px 10px 10px;
+}
+#sideBox > .box2 > :nth-child(4) > button {
+    background-color: #812742;
+    border: none;
+    color: white;
+    border-radius: 40px;
+    padding: 10px 170px;
+    font-size: 25px;
+}
+#sideBox > .box2 > :nth-child(4) > button:active {
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#sideBox > .box2 > :nth-child(4) > button:hover {
+    cursor: pointer;
+}
+#sideBox > .box2 > :nth-child(5) {
+    color: #9C3353;
+}
+#sideBox > .box2 > :nth-child(6) {
+    /* width: 400px; */
+    margin: 30px;
+}
