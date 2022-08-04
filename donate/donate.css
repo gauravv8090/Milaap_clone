@@ -1,0 +1,570 @@
+/* * {
+    margin: 0px;
+    padding: 0px;
+} */
+#top {
+    border: 1px solid rgb(160, 160, 160);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #F8F8F8;
+}
+#top > :first-child {
+    font-size: small;
+}
+#top > :nth-child(2) {
+    /* border: 2px solid green; */
+    margin-left: -10px;
+}
+#btndiv {
+    /* border: 2px dashed blue; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+    
+}
+#btndiv > button {
+    /* border: 1px solid #691A47; */
+    background-color: white;
+    color: #691A47;
+    font-size: 20px;
+    padding: 8px 50px;
+    border-radius: 50px;
+    border: 1px solid #691A47;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* transition: 0.2s all ease-in-out; */
+}
+#btndiv > button:active {
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#btndiv > button:hover {
+    cursor: pointer;
+}
+#containerFirst {
+    /* border: 2px dashed crimson; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 30px;
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+}
+#containerFirst > .box {
+    /* border: 2px solid green; */
+    box-shadow: 0 -1px 20px 0 rgb(156 51 83 / 20%);
+    border-radius: 10px;
+    /* transition: 0.2s all ease-in-out; */
+}
+#containerFirst > .box:active {
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#containerFirst > .box:hover {
+    cursor: pointer;
+}
+
+#containerFirst > div > :nth-child(1) > img {
+    /* border: 2px solid cornflowerblue; */
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#containerFirst > .box > :nth-child(2) {
+    /* border: 2px dashed blue; */
+    margin-top: 5px;
+    padding-left: 10px;
+    font-size: small;
+    font-weight: bold;
+    color: rgb(43, 42, 42);
+    line-height: 20px;
+}
+#containerFirst > .box > :nth-child(3) {
+    /* border: 2px dashed red; */
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+}
+#containerFirst > .box > :nth-child(3) > :nth-child(1) {
+    /* border: 2px solid orchid; */
+    display: flex;
+    align-items: center;
+    
+}
+#containerFirst > .box > :nth-child(3) > :nth-child(1) > img  {
+    margin-right: 0px;
+    margin-left: 10px;
+    /* border: 2px solid orange; */
+}
+#containerFirst > .box > :nth-child(3) > :nth-child(1) > div {
+    text-align: center;
+    margin: auto;
+    margin-left: 20px;
+    /* border: 2px solid crimson; */
+}
+
+#containerFirst > .box > :nth-child(3) > :nth-child(1) > div > h3 {
+    /* background-color: green; */
+    margin-bottom: -5px;
+}
+
+#containerFirst > .box > :nth-child(3) > :nth-child(1) > div > h6 {
+    margin-top: -10px;
+    margin-bottom: -20px;
+    /* background-color: yellow; */
+}
+#containerFirst > .box > :nth-child(3) > :nth-child(2) {
+    /* border: 2px solid black; */
+    margin: auto;
+    text-align: center;
+    padding: 0px 2px;
+}
+#containerFirst > .box > :nth-child(3) > :nth-child(2) > h6,p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#containerFirst > .box > :nth-child(4) {
+    border-left: 3px solid #691A47;
+    background-color: #F8F8F8;
+    margin: 20px 15px;
+    padding: 0px 0px 0px 10px;
+}
+
+
+#middleBar {
+    /* border: 2px dashed crimson; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 70%;
+    padding: 10px 10px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+#middleBar > .midBox {
+    /* border: 2px dashed green; */
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px 50px;
+    padding: 0px 20px;    
+    background-color: white;    
+}
+#middleBar > .midBox {
+    margin-top: -10px;
+}
+#middleBar > :nth-child(2) {
+    border-left: 2px solid #691A47;    
+    margin-left: 0px;
+}
+#middleBar > .midBox >  :nth-child(1) {
+    /* border: 2px solid black; */
+    display: flex;
+    text-align: center;
+    padding: 0px 10px;
+}
+#middleBar > .midBox > :nth-child(2) {
+    margin-top: -30px;
+}
+#middleBar > .midBox > :nth-child(2) {
+    /* border: 2px solid black; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 0px 30px;
+    justify-content: space-around;
+    padding: 10px;
+}
+#middleBar > .midBox > :nth-child(2) > div {
+    /* border: 2px dashed green; */
+    width: 100%;    
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+}
+#middleBar > .midBox > div > div {
+    height: 70px;
+    transition: 0.2s all ease-in-out;
+}
+#middleBar > .midBox > div > div:active {
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#middleBar > .midBox > div > div:hover {
+    cursor: pointer;
+}
+
+#emergency {
+    /* border: 2px dashed black; */
+    background-image: linear-gradient(90deg,#602747,#9A3252);
+    display: grid;
+    padding: 40px;
+    margin-top: 20px;
+}
+#emergency > div {
+    /* border: 2px solid red; */
+    background-color: white;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    margin: auto;
+    padding: 0px 50px;
+    align-items: center;
+}
+#emergency > div > :nth-child(1) {
+    /* border: 2px dashed green; */
+    padding: 0px 20px;
+    font-size: large;
+    text-align: center;
+}
+#emergency > div > :nth-child(2) {
+    /* border: 2px dashed green; */
+    margin: auto;
+}
+
+#emergency > div > :nth-child(2) > button {
+    background-color: #9C3353;
+    border: none;
+    color: white;
+    border-radius: 40px;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+#seeMore {
+    /* border: 2px solid red; */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#seeMore > button {
+    border: none;
+    background-color: white;
+    text-align: center;
+    font-size: large;
+    color: #9A3252;
+    margin-top: 20px;
+}
+#seeMore > button:active {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+#seeMore > button:hover {
+    cursor: pointer;
+}
+
+#emergency > div > :nth-child(2) > button:active {
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#emergency > div > :nth-child(2) > button:hover {
+    cursor: pointer;
+}
+
+
+/* footer css here */
+
+#container {
+    /* border: 2px dashed crimson; */
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: flex-start;
+    width: 100%;
+    margin: auto;
+    margin-top: 420px;
+    padding: 10px 0px;
+    box-shadow: 0 -1px 20px 0 rgb(156 51 83 / 20%);
+  }
+
+  #container > .dd1, .dd2, .dd3, .dd4 {
+    /* border: 2px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    margin-left: 20px;
+    justify-content: left;
+  }
+  #container > .dd1 > div {
+    /* border: 1px dashed green; */
+    margin-bottom: 10px;
+    /* width: 120px; */
+  }
+  #container > .dd2 > div {
+    /* border: 1px dashed green; */
+    margin-bottom: -10px;
+    /* width: 150px; */
+  }
+  #container > .dd3 > div {
+    /* border: 1px dashed green; */
+    line-height: 20px;
+  }
+  #container > .dd3 > :nth-child(4) > h5 {
+    margin-top: 20px;
+  }
+  #container > .dd3 {
+    /* border: 2px dashed red; */
+    margin-right: 160px;
+    width: 100px;
+  }
+
+
+  #container > .dd4 {
+    /* border: 2px dashed red; */
+    margin-right: 40px;
+    margin-left: -10px;
+  }
+
+
+  #container > .dd4 > div {
+    /* border: 2px dashed crimson; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 270px;
+    align-items: center;
+    margin: 10px 0px;
+  }
+  #container > .dd4 > :nth-child(2) > :nth-child(2) {
+    /* border: 2px dashed green; */
+    margin-left: -20px;
+  }
+  #container > .dd4 > :nth-child(2) > :nth-child(3) {
+    /* border: 2px dashed purple; */
+    margin-left: -20px;    
+  }
+  #container > .dd4 > :nth-child(3) > :nth-child(1) {
+    /* border: 2px dashed green; */
+    margin-right: -20px;
+  }
+  #container > .dd4 > :nth-child(3) > :nth-child(2){
+    /* border: 2px dashed red; */
+    margin-right: -50px;
+  }
+  
+ 
+
+  #container > .dd5 {
+    /* border: 2px dashed black; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 25px;
+    margin-left: -20px;
+    margin-right: 20px;
+    text-align: center;
+    padding: 20px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: rgb(250, 248, 248);
+  }
+  #container > .dd5 > div {
+    /* border: 2px solid green; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    margin-right: 60px;
+    width: 100%;
+  }
+  #container > .dd5 > :nth-child(2) > div {
+    /* border: 2px solid crimson; */
+    margin-bottom: -30px;
+    margin-left: -70px;
+    margin-right: 20px;
+    padding: 10px;
+  }
+  #container > .dd5 > :nth-child(2) > :nth-child(3) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #container > .dd5 > :nth-child(2) > :nth-child(3) > div {
+    margin-bottom: 10px;
+  }
+  #container > .dd2 > div > p > span {
+    color: #9c3353;
+  }
+  #container > .dd4 > button {
+    background-color: #9c3353;
+    border: none;
+    border-radius: 50px;
+    margin: 30px 20px;
+    width: 220px;
+    padding: 15px 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5ms;
+  }
+  /* #container > .dd4 > button:hover {
+    transform: ;
+    cursor: pointer;
+  } */
+
+  #container > .dd5 > :nth-child(2) > :nth-child(2) > h4 {
+    color: #9c3353;
+  }
+  
+  #container > div > h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+  #container > .dd3 > :nth-child(4) > h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+  #container > div > div > P {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(75, 73, 73);
+    font-size: smaller;
+  }
+  #container > div > div > div > P {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(75, 73, 73);
+    font-size: smaller;
+  }
+
+  #container > div > hr {
+    width: 10px;
+    border: 1px solid black;
+    margin-top: 0px;
+  }
+  #container > div > div > hr {
+    width: 10px;
+    border: 1px solid black;
+    margin-top: 0px;
+  }
+
+  #blackBottom {
+    background-color: #212121;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    color: white;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+  }
+  
+  #blackBottom > div > h6 {
+    color: white;
+    margin-top: 10px;
+  }
+
+  #blackBottom > div > p {
+    color: gray;
+    margin-top: -15px;
+    margin-bottom: 5px;
+  }
+
+  @media screen and (min-width: 720px) and (max-width: 1024px) {
+    #container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    #container > .dd1, .dd2, .dd3 {                
+      grid-template-columns: repeat(3, 1fr);       
+    }
+    #container > .dd4 > div > :nth-child(1) {        
+      grid-template-columns: repeat(2, 1fr);                
+    }
+    #container > .dd5 {
+      grid-template-columns: repeat(2, 1fr);
+    }      
+    #blackBottom {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 719px) {
+    #container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    #container > .dd1, .dd2, .dd3 {               
+      grid-template-columns: repeat(1, 1fr);
+    }
+    
+    #container > .dd4 > div {        
+      grid-template-columns: repeat(2, 1fr);                
+      margin: auto;
+      margin-left: 40px;
+      width: 100%;
+    }
+    #container > .dd4 > :nth-child(3) > :nth-child(2) {
+      /* border: 2px dashed red; */
+      margin-left: -55px;
+    }
+    #container > .dd5 {
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+    } 
+    #blackBottom {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+
+
+
+
+
+/* here media screen */
+
+@media screen and (min-width: 720px) and (max-width: 1280px) {
+    #containerFirst {
+        grid-template-columns: repeat(2,1fr);
+        width: 95%;
+    }
+    #middleBar {
+        width: 90%;
+    }
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 719px) {
+    #top {
+        flex-wrap: wrap;
+    }
+    #containerFirst {
+        grid-template-columns: repeat(1,1fr);
+        width: 95%;
+    }
+    #middleBar {
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        width: 100%;
+    }
+    
+    #emergency > div {
+        grid-template-columns: repeat(1,1fr); 
+        margin-left: -20px;       
+    }
+    #emergency > div > :nth-child(2) {
+        /* border: 2px solid black; */
+        margin-bottom: 20px;
+        
+    }
+    #emergency > div > :nth-child(2) > button {
+        padding: 10px;
+        font-size: medium;
+        margin: auto;
+    }
+    #middleBar > .midBox > :nth-child(2) {
+        /* border: 2px solid red; */
+        flex-wrap: wrap;
+    }
+    #middleBar > :nth-child(2) {
+        border: none;
+    }
+}
