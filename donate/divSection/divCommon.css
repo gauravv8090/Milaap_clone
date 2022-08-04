@@ -1,0 +1,92 @@
+#containerFirst {
+    border: 2px dashed crimson;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 30px;
+    width: 1800px;
+    margin: auto;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+#containerFirst > .box {
+    /* border: 2px solid green; */
+    box-shadow: 0 -1px 20px 0 rgb(156 51 83 / 20%);
+    border-radius: 10px;
+    /* transition: 0.2s all ease-in-out; */
+}
+#containerFirst > .box:active {
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#containerFirst > .box:hover {
+    cursor: pointer;
+}
+
+#containerFirst > .box > :nth-child(2) > img {
+    /* border: 2px solid cornflowerblue; */
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#containerFirst > .box > :nth-child(1) {
+    border: 2px dashed blue;
+    margin-top: 5px;
+    padding-left: 10px;
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(43, 42, 42);
+    line-height: 30px;
+}
+#containerFirst > .box > :nth-child(3) {
+    /* border: 2px dashed red; */
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+}
+#containerFirst > .box > :nth-child(3) > :nth-child(1) {
+    /* border: 2px solid orchid; */
+    display: flex;
+    align-items: center;
+    
+}
+#containerFirst > .box > :nth-child(3) > :nth-child(1) > img  {
+    margin-right: 0px;
+    margin-left: 10px;
+    /* border: 2px solid orange; */
+}
+#containerFirst > .box > :nth-child(3) > :nth-child(1) > div {
+    text-align: center;
+    margin: auto;
+    margin-left: 20px;
+    /* border: 2px solid crimson; */
+}
+
+#containerFirst > .box > :nth-child(3) > :nth-child(1) > div > h3 {
+    /* background-color: green; */
+    margin-bottom: -5px;
+}
+
+#containerFirst > .box > :nth-child(3) > :nth-child(1) > div > h6 {
+    margin-top: -10px;
+    margin-bottom: -20px;
+    /* background-color: yellow; */
+}
+#containerFirst > .box > :nth-child(3) > :nth-child(2) {
+    /* border: 2px solid black; */
+    margin: auto;
+    text-align: center;
+    padding: 0px 2px;
+}
+#containerFirst > .box > :nth-child(3) > :nth-child(2) > h6,p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#containerFirst > .box > :nth-child(4) {
+    border-left: 3px solid #691A47;
+    background-color: #F8F8F8;
+    font-size: larger;
+    margin: 20px 15px;
+    padding: 10px 50px 10px 10px;
+}
