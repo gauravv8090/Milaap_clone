@@ -335,6 +335,195 @@ display : none;
   line-height: 30px;
 }
 
+#NOfees {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  margin-top: 80px;
+  box-shadow: rgba(223, 148, 148, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-left: 8px solid rgb(113, 22, 22);
+  background-image: linear-gradient(to right ,rgb(255, 240, 240),rgb(255, 255, 255) );
+}
+
+#NOfees > img{
+  width: 6%;
+  margin-right: 5px;
+  transform: rotate(15deg);
+}
+
+
+#NOfees > p {
+  text-align: center;
+  margin-left: 15px;
+  font-size: 25px;
+  font-weight: 500;
+  opacity: 80%;
+}
+
+#NOfees > p + p {
+  opacity: 0.7;
+  font-weight: 600;
+  font-size: 50px;
+  color: #753057;
+  right: 30px;
+  padding-left: 5px;
+  position: absolute;
+  margin-top: 3px;
+  margin-right: 150px;
+}
+
+#fundraising_title > h1 {
+  margin-top: 63px;
+  color: #3a2d2d;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#box_design {
+  margin-top: 2px;
+  display: flex;
+  margin-left: 520px;
+}
+
+#box_design > #box1 {
+  width: 23px;
+  height: 23px;
+  margin: 0 20px;
+  transform: rotate(45deg);
+  background-color: #662c3d;
+}
+
+#box_design > #box2,
+#box_design > #box {
+  opacity: 0.53;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  margin-top: 5px;
+  background-color: #8e4870;
+}
+
+#box_design > #line {
+  width: 135px;
+  height: 1px;
+  margin-top: 8.5px;
+  margin-right: 25px;
+  background-color: rgb(149, 140, 140);
+}
+
+#box_design > #line1 {
+  width: 135px;
+  height: 1px;
+  margin-top: 8.5px;
+  margin-left: 25px;
+  background-color: rgb(179, 166, 166);
+}
+
+#searchInput {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: 80%;
+}
+#searchInput > #search {
+  width: 50%;
+  margin-top: 50px;
+  border: 1px solid #b44566;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+  box-shadow: 0 0 6px 0 rgba(210, 78, 118, 0.3);
+  height: 40px;
+  padding-left: 20px;
+}
+#searchInput > #search:focus{
+  border: 1px solid #b44566;
+  box-shadow: 0 0 6px 0 rgba(210, 78, 118, 0.3);
+  outline: none;
+}
+
+#searchInput > #searchbtn {
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+  height: 44px;
+  width: 55px;
+  background-color: #9c3353;
+  border: 0;
+  margin-top: 50px;
+  padding-right: 10px;
+}
+
+#searchInput .material-icons {
+  vertical-align: middle;
+  margin-left: 2px;
+  margin-top: 2px;
+  font-size: 25px;
+  margin-bottom: 2px;
+  color: white;
+}
+
+#categories {
+  display: flex;
+  justify-content: space-between;
+  width: 52%;
+  margin: auto;
+  margin-top: 42px;
+}
+#categories> #category1{
+  width: 23%;
+  box-shadow: rgba(156, 51, 83, 0.12) 1px 2px 4px 1px,
+    rgba(156, 51, 83, 0.32) 1px 2px 16px 1px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: #691a47;;
+  color:white;
+}
+#categories> #category2{
+  width: 23%;
+  box-shadow: rgba(156, 51, 83, 0.12) 1px 2px 4px 1px,
+    rgba(156, 51, 83, 0.32) 1px 2px 16px 1px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: white;
+  color:black;
+}
+#categories> #category3{
+  width: 23%;
+  box-shadow: rgba(156, 51, 83, 0.12) 1px 2px 4px 1px,
+    rgba(156, 51, 83, 0.32) 1px 2px 16px 1px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: white;
+  color:black;
+}
+#categories> #category4{
+  width: 23%;
+  box-shadow: rgba(156, 51, 83, 0.12) 1px 2px 4px 1px,
+    rgba(156, 51, 83, 0.32) 1px 2px 16px 1px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: white;
+  color:black;
+}
+
+#categories> .category >p{
+  font-weight: 300;
+}
+
 
 
 

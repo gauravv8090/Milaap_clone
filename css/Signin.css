@@ -48,6 +48,10 @@ input{
   margin: 13px 0px;
   border-bottom: 1px solid rgb(222, 225, 222);
 }
+input:focus{
+  border-bottom: 1px solid rgb(222, 225, 222);
+  outline: none;
+}
 
 form button{
   padding: 15px 180px;
