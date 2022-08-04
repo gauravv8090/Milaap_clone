@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>navbar</title>
+      <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+    <div id="parent">
+        <div id="navLeft">
+            <div>
+                <img src="https://assets.milaap.org/assets/milaap-logo-tiny-4d3dbc4e55c2aaec351f0f376329c624236c4d6266b910f472684e70603f600d.png"
+                    alt="milapLogo">
+            </div>
+            <div>
+                <button class="navbtn"><a>Home</a></button>
+            </div>
+            <div>
+                <button class="navbtn">Donate</button>
+            </div>
+            <div>
+                <button class="navbtn">Lend</button>
+            </div>
+            <div>
+                <button class="navbtn">Pricing</button>
+            </div>
+            <div>
+                <button class="navbtn">Contact us</button>
+            </div>
+            <div>
+                <input type="checkbox" id="switch" class="checkbox" />
+                <label for="switch" class="toggle">
+                    <p id="ind"> &nbsp  INR &nbsp  &nbsp USD  </p>
+                </label>
+
+            </div>
+        </div>
+        <div id="navRight">
+            <div>
+                <button>Start a fundraiser</button>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNTnKuFzx2Q3EqHYsrqQoVxWRxIu0A3pM8qADvlTxaHf2LCYJw"
+                    alt="logo" id="LOSINIMG">
+            </div>
+
+        </div>
+    </div>
+    <div id="LOSIN">
+        <div > <h5>Login</h5> </div>
+        <div ><h5>Register</h5> </div>
+    </div>
+</body>
+
+</html>
+<script>
+    document.getElementById("LOSINIMG").addEventListener("click", LOginFUN);
+    var ddaa= document.getElementById("LOSIN");
+    function LOginFUN(){
+    if(ddaa.style.display === "none"){
+        ddaa.style.display = "flex";
+        ddaa.style.justifyContent= "space-around"
+        // ddaa.style.margin= "0";
+        ddaa.style.paddingTop = "15px";
+    }else{
+        ddaa.style.display = "none";
+    }
+    }
+</script>
