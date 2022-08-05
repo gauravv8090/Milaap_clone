@@ -524,7 +524,233 @@ display : none;
   font-weight: 300;
 }
 
+#containerFirst {
+  /* border: 2px dashed crimson; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 30px;
+  width: 75%;
+  margin: auto;
+  margin-top: 50px;
+}
+#containerFirst > .box {
+  /* border: 2px solid green; */
+  box-shadow: 0 -1px 20px 0 rgb(156 51 83 / 20%);
+  border-radius: 10px;
+  /* transition: 0.2s all ease-in-out; */
+}
+#containerFirst > .box:active {
+  transform: scale(1.02);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#containerFirst > .box:hover {
+  cursor: pointer;
+}
 
+#containerFirst > div > :nth-child(1) > img {
+  /* border: 2px solid cornflowerblue; */
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#containerFirst > .box > :nth-child(2) {
+  /* border: 2px dashed blue; */
+  margin-top: 5px;
+  padding-left: 10px;
+  font-size: small;
+  font-weight: bold;
+  color: rgb(43, 42, 42);
+  line-height: 20px;
+}
+#containerFirst > .box > :nth-child(3) {
+  /* border: 2px dashed red; */
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+}
+#containerFirst > .box > :nth-child(3) > :nth-child(1) {
+  /* border: 2px solid orchid; */
+  display: flex;
+  align-items: center;
+  
+}
+#containerFirst > .box > :nth-child(3) > :nth-child(1) > img  {
+  margin-right: 0px;
+  margin-left: 10px;
+  /* border: 2px solid orange; */
+}
+#containerFirst > .box > :nth-child(3) > :nth-child(1) > div {
+  text-align: center;
+  margin: auto;
+  margin-left: 20px;
+  /* border: 2px solid crimson; */
+}
+
+/* #containerFirst > .box > :nth-child(3) > :nth-child(1) > div > h3 {
+  /* background-color: green; */
+  /* color: yellow; 
+} */
+
+#containerFirst > .box > :nth-child(3) > :nth-child(1) > div > h6 {
+  margin-bottom: 10px;
+  /* background-color: blue; */
+  /* color: blue; */
+}
+#containerFirst > .box > :nth-child(3) > :nth-child(2) {
+  /* border: 2px solid black; */
+  margin: auto;
+  text-align: center;
+  padding: 0px 2px;
+}
+#containerFirst > .box > :nth-child(3) > :nth-child(2) > h6,p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+#containerFirst > .box > :nth-child(4) {
+  border-left: 3px solid #691A47;
+  background-color: #F8F8F8;
+  margin: 20px 15px;
+  padding: 0px 0px 0px 10px;
+}
+
+
+#seeMore {
+  /* border: 2px solid red; */
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#seeMore > button {
+  border: none;
+  background-color: white;
+  text-align: center;
+  font-size: large;
+  color: #9A3252;
+  margin-top: 20px;
+}
+#seeMore > button:active {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+#seeMore > button:hover {
+  cursor: pointer;
+}
+
+#emergency {
+  /* border: 2px dashed black; */
+  background-image: linear-gradient(90deg,#602747,#9A3252);
+  display: grid;
+  padding: 40px;
+  margin-top: 20px;
+}
+#emergency > div {
+  /* border: 2px solid red; */
+  background-color: white;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  margin: auto;
+  padding: 20px 50px;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+}
+#emergency > div > :nth-child(1) {
+  /* border: 2px dashed green; */
+  padding: 0px 20px;
+  font-size: large;
+  text-align: center;
+}
+#emergency > div > :nth-child(2) {
+  /* border: 2px dashed green; */
+  margin: auto;
+}
+
+#emergency > div > :nth-child(2) > button {
+  background-color: #9C3353;
+  border: none;
+  color: white;
+  border-radius: 40px;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+#emergency > div > :nth-child(2) > button:active {
+  transform: scale(1.02);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#emergency > div > :nth-child(2) > button:hover {
+  cursor: pointer;
+}
+
+#MilaapApp{
+  width: 80%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+  display: flex;
+  padding: 70px;
+  border-radius: 10px;
+  justify-content: space-around;
+  background-image: linear-gradient(rgba(252, 208, 208, 0.2),rgb(227, 216, 216));
+}
+
+#MilaapApp:hover{
+  box-shadow: rgba(235, 66, 66, 0.2) 0px 8px 24px;
+}
+#MilaapApp> #playstore_div{
+  /* width: 80%; */
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  text-align: center;
+  width: 50%;
+}
+#playstore_div div:first-child{
+  margin-bottom: 20px;
+}
+#playstore_div div:last-child{
+  margin-top: 20px;
+}
+#playstore_div div:first-child h2{
+  margin-bottom: 10px;
+
+}
+#qrcode{
+  width: 200px;
+  border:2px solid black;
+  margin-bottom: 10px;
+}
+
+#review_div{
+  text-align: center;
+  margin-top: 50px;
+  padding: 100px 0px;
+  display: grid;
+  /* width: 80%; */
+  margin: auto;
+}
+#review_div h1{
+  margin-bottom: 10px;
+}
+#review_div div:last-child button{
+  margin-top: 29px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: #602747;
+  color: white;
+  font-size: 20px;
+}
+#review_div div:last-child button:active {
+  transform: scale(1.02);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#review_div div:last-child button:hover {
+  cursor: pointer;
+}
 
 
 
