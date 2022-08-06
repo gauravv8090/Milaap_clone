@@ -8,13 +8,16 @@ html {
 
 /* pricing-banner section -----------------------------*/
 #pricing-banner {
+  /* padding-top: 70px; */
+
   /* border: 1px solid red; */
   height: 300px;
   /* width: 50%;  */
   display: flex;
   flex-direction: column;
   margin-left: 50%;
-  margin-top: 10vh;
+  /* margin-top: vh; */
+  padding-top: 10%;
   justify-content: space-around;
   color: white;
   font-size: larger;
@@ -46,6 +49,7 @@ html {
   text-decoration: none;
   color: #9c3353;
   text-align: center;
+  cursor: pointer;
 }
 #pricing-banner::before {
   content: "";
@@ -60,6 +64,7 @@ html {
   width: 100%;
   z-index: -1;
   opacity: 1;
+ margin-top: 70px;             /*   new   */
 }
 
 
@@ -119,6 +124,36 @@ html {
   border: 0;
   color: #9c3353;
 }
+
+ /* for hide part by js ------------------- */
+ #pricing-hide-part{
+  width: 100%;
+  background-color: #9c3353;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 15px;
+ }
+
+ .pricing-totle-left-des-1 ,.pricing-totle{
+  padding: 20px;
+ }
+ #pricing-totle{
+  margin-left: 15%;
+  font-size: 40px;
+ }
+
+ .pricing-totle-right-content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+ }
+
+
+
 
 
 /* for input range ----------------------------------------- */
@@ -180,16 +215,8 @@ input[type="range"]:active::-webkit-slider-thumb{
   background-color: #ffffff;
   border: 3px solid #3264fe;
 }
-/* #slider-value{
-  width: 20%;
-  color: #ffffff;
-  text-align: center;
-  font-family: "Roboto Mono",monospace;
-  padding: 10px 0;
-  border-radius: 5px;
-} */
 
-/* why milap section---------------------------------- */
+/* why choose milap section---------------------------------- */
 
 #why-choose-milap {
   background-color: #b5dcd7;
@@ -207,7 +234,7 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 #why-choose-milap > .choose-milap-box > .choose-milap-img {
   background: url(/Milaap_clone/pricing/img/svg/svg4.svg) no-repeat left bottom;
-  height: 600px;
+  height: 500px;
   width: 400px;
 }
 
@@ -218,7 +245,6 @@ input[type="range"]:active::-webkit-slider-thumb{
   border: 2px dotted rgb(180, 176, 176);
   background-color: white;
   border-radius: 10px;
-
   width: 90%;
 }
 #why-choose-milap
@@ -309,17 +335,16 @@ input[type="range"]:active::-webkit-slider-thumb{
   text-align: center;
 }
 #why-choose-milap a {
-  margin-left: 50px;
+  margin-left: 10%;
   border: 1px solid #fff;
   border-radius: 50px;
   background-color: #9c3353;
-  font-size: 20px;
-  padding: 15px 50px;
+  font-size: 18px;
+  padding: 10px 20px;
   text-decoration: none;
   color: #fff;
   text-align: center;
-  
-
+  cursor: pointer;
 }
 
 /* about milaap */
@@ -374,4 +399,130 @@ input[type="range"]:active::-webkit-slider-thumb{
   margin: 20px;
 }
 
+
+
+/* Media Quary----------------------------------- */
+
+/* medium screen */
+@media all and (min-width: 451px) and (max-width: 750px) {
+  /* #pricing-banner{
+    height: 200px;
+  } */
+  #pricing-banner > .pricing-mainTitle{
+    font-size: 15px;
+  }
+  #pricing-banner > .banner-help {
+    font-size: 15px;
+  }
+  #pricing-banner > .pricing-banner-decrip {
+    font-size: 15px;
+    padding: 10px;
+    width: 90%;
+    line-height: 25px;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+  }
+  #pricing-banner > .banner-help > .banner-zero-percent {
+    height: 40px;
+  }
+
+  #pricing-banner > .pricing-banner-fundraiser {
+    border: 1px solid #fff;
+    border-radius: 35px;
+    background-color: #fff;
+    width: 100px;
+    margin-top: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: #9c3353;
+    text-align: center;
+    font-size: 13px;
+  }
+  #pricing-hide-part{
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+   }
+   #pricing-totle{
+    font-size: 20px;
+   }
+   .pricing-totle-right-content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+   }
+   #why-choose-milap > .choose-milap-box > .choose-milap-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+  #why-choose-milap a {
+    /* margin-left: 15%; */
+    font-size: 15px;
+    padding: 7px 20px;
+  }
+
+
+  }
+
+
+  /* small screen */
+  @media all and (min-width: 100px) and (max-width: 450px) {
+    /* #pricing-banner{
+      height: 150px;
+    } */
+    #pricing-banner > .pricing-mainTitle{
+      font-size: 10px;
+    }
+    #pricing-banner > .banner-help {
+      font-size: 8px;
+    }
+    #pricing-banner > .pricing-banner-decrip {
+      font-size: 10px;
+      padding: 5px;
+      width: 90%;
+      line-height: 15px;
+      border-bottom: 1px solid #fff;
+      border-top: 1px solid #fff;
+    }
+    #pricing-banner > .banner-help > .banner-zero-percent {
+      height: 20px;
+    }
+    #pricing-banner > .pricing-banner-fundraiser {
+      border: 1px solid #fff;
+      border-radius: 20px;
+      background-color: #fff;
+      width: 80px;
+      margin-top: 5px;
+      padding: 2px;
+      text-decoration: none;
+      color: #9c3353;
+      text-align: center;
+      font-size: 10px;
+    }
+
+    #pricing-hide-part{
+      font-size: 15px;
+      display: flex;
+      flex-wrap: wrap;
+     }
+     #pricing-totle{
+      font-size: 15px;
+     }
+     .pricing-totle-right-content{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 7px;
+     }
+     #why-choose-milap > .choose-milap-box > .choose-milap-card {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+    #why-choose-milap a {
+      font-size: 12px;
+      padding: 5px 15px;
+    }
+  
+    }
 

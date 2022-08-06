@@ -6,8 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pricing</title>
  <link rel="stylesheet" href="/Milaap_clone/pricing/pricingCss/pricing.css">
+ <link rel="stylesheet" href="/tepm/tempnav.css">
   </head>
   <body>
+    <section >
+
+
+
+      <div id="parent">
+        <div id="navLeft">
+            <div>
+                <img src="https://assets.milaap.org/assets/milaap-logo-tiny-4d3dbc4e55c2aaec351f0f376329c624236c4d6266b910f472684e70603f600d.png"
+                    alt="milapLogo">
+            </div>
+            <div>
+                <button class="navbtn"><a>Home</a></button>
+            </div>
+            <div>
+                <button class="navbtn">Donate</button>
+            </div>
+            <div>
+                <button class="navbtn">Lend</button>
+            </div>
+            <div>
+                <button class="navbtn">Pricing</button>
+            </div>
+            <div>
+                <button class="navbtn">Contact us</button>
+            </div>
+            <div>
+                <input type="checkbox" id="switch" class="checkbox" />
+                <label for="switch" class="toggle">
+                    <p id="ind"> &nbsp  INR &nbsp  &nbsp USD  </p>
+                </label>
+  
+            </div>
+        </div>
+        <div id="navRight">
+            <div>
+                <button>Start a fundraiser</button>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNTnKuFzx2Q3EqHYsrqQoVxWRxIu0A3pM8qADvlTxaHf2LCYJw"
+                    alt="logo" id="LOSINIMG">
+            </div>
+  
+        </div>
+    </div>
+    <div id="LOSIN">
+        <div > <h5>Login</h5> </div>
+        <div ><h5>Register</h5> </div>
+    </div>
+    </section>
+
+
+
+
+
+
+
+
     <!-- for home page of pricing -->
     <section id="pricing-banner">
       <!-- <img src="/pricing/img/svg/svg2.svg" alt=""> -->
@@ -40,17 +98,17 @@
           <div class="mid-child-1">I want to raise:</div>
   
           <div class="mid-child-2">
-            <select name="" id="">
+            <p><select name="" id="">
               <option value="">₹ INR</option>
               <option value="">$ USD</option>
-            </select>
+            </select></p>
 
             <p id="slider-value">10000</p>
           </div>
         </div>
 
        
-          <input type="range" id="my-slider" min="10000" max="10000000" value="50" oninput="slider()">
+          <input type="range" id="my-slider" step="0.0" min="10000" max="10000000" value="50" oninput="slider()">
           <!-- <div id="slider-value">10000</div> -->
      
       </div>
@@ -58,8 +116,43 @@
 
 
       <div class="pricing-calculator-down">
-        <button>calculate</button>
+        <button id="pricing-calcu-btn" onclick="toggleHide()">calculate</button>
       </div>
+    </section>
+
+
+
+      <!-- for hide part by js -->
+    <section id="pricing-hide-part">
+
+        <div class="pricing-totle-left">
+          <p class="pricing-totle-left-des-1">Consider setting a goal of approx.</p>
+          <p id="pricing-totle"> 0 </p> 
+        </div>
+
+
+        <div class="pricing-totle-right">
+
+
+          <div class="pricing-totle-right-content">
+            <p>Want to raise (₹) :</p>
+            <p id="pricing-totle-right-raise">0</p>
+          </div>
+
+          <div class="pricing-totle-right-content">
+            <p>Milaap platform fee (₹) :</p>
+            <p>0</p>
+          </div>
+
+
+          <div class="pricing-totle-right-content">
+            <p>Payment gateway charges (₹) :</p>
+            <p id="pricing-totle-right-getway">0</p>
+          </div>
+
+
+        </div>
+
     </section>
 
     <!-- for why choose milap section -->
@@ -146,6 +239,7 @@
           </div>
         </div>
       </div>
+      <button></button>
     </section>
 
     <!-- for about milapo -->
@@ -282,15 +376,46 @@
   </body>
 </html>
 <script>
-
-
 var mySlider = document.getElementById("my-slider");
 var sliderValue = document.getElementById("slider-value");
+var price=document.getElementById("pricing-totle-right-raise");
+var getway=document.getElementById("pricing-totle-right-getway");
+var total=document.getElementById("pricing-totle");
 
 function slider(){
-    valPercent = (mySlider.value / mySlider.max)*100;
-    mySlider.style.background = `linear-gradient(to right, #3264fe ${valPercent}%, #d5d5d5 ${valPercent}%)`;
-    sliderValue.textContent = mySlider.value;
+    // valPercent = (mySlider.value / mySlider.max)*100;
+    // mySlider.style.background = `linear-gradient(to right, #3264fe ${valPercent}%, #d5d5d5 ${valPercent}%)`;
+    sliderValue.innerText = mySlider.value;
+    price.innerText=mySlider.value;
+
+    getway.innerText= (mySlider.value * 2)/100
+    total.innerText=  Number(mySlider.value )+ Number((mySlider.value * 2)/100)  +" ₹";
+
+    
 }
 slider();
+
+  function toggleHide(){
+    var togbtn=document.getElementById("pricing-calcu-btn");
+    var hide_seek = document.getElementById("pricing-hide-part");
+
+    if(hide_seek.style.display != 'none'){
+      hide_seek.style.display = 'none'
+    }else{
+      hide_seek.style.display = ""
+    }
+  }
+
+  document.getElementById("LOSINIMG").addEventListener("click", LOginFUN);
+    var ddaa= document.getElementById("LOSIN");
+    function LOginFUN(){
+    if(ddaa.style.display === "none"){
+        ddaa.style.display = "flex";
+        ddaa.style.justifyContent= "space-around"
+        // ddaa.style.margin= "0";
+        ddaa.style.paddingTop = "15px";
+    }else{
+        ddaa.style.display = "none";
+    }
+    }
 </script>
