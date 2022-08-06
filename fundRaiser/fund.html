@@ -76,13 +76,13 @@
           <option value="russia">&#127479;&#127482; RU</option>
           <option value="israel">&#127470;&#127473; IL</option>
         </select>
-        <input id="fund-select-number" type="tel" placeholder="Enter Number">
+        <input id="fund-select-number" type="tel" placeholder="Enter Mobile Number">
       </div>
 
     </section>
 
     <section id="fund-submit">
-            <input class="fund-submit-button" type="button" value="SUBMIT">
+          <a href="/Milaap_clone/fundRaiser/fund-2.html"> <input id="fund-submit-button" type="button" value="SUBMIT" ></a> 
     </section>
   </body>
 </html>
@@ -104,5 +104,14 @@
     }
 
   }
+
+  document.querySelector("#fund-submit-button").addEventListener("click", lastfun);
+          function lastfun(){
+            confirm("");
+            document.querySelector("#fund-form-name").value="";
+            document.querySelector("#fund-form-email").value="";
+            document.querySelector("#fund-select-number").value="";
+
+          }
 
 </script>
