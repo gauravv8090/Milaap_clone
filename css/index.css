@@ -8,6 +8,11 @@
   display: flex;
   justify-content: space-between;
   box-shadow: #f9e6ec 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  
+  /* position: ; */
+  position: fixed;
+  background-color: white;
+  
 }
 #navLeft {
   width: 48%;
@@ -170,9 +175,10 @@ display : none;
   margin-left: 86.5%;
   display: none;
   /* border: 1px solid red; */
-  margin-top: -0.5%;
+  margin-top: 70px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: fixed;
 }
 #LOSIN>div{
  /* height: 32px; */
@@ -199,6 +205,7 @@ display : none;
   background-size: 45%;
   background-position-y: bottom;
   padding-bottom: 12px;
+  padding-top: 80px;
 }
 #first_div .material-icons {
   background-color: #662438;
@@ -252,7 +259,8 @@ display : none;
   width: 40%;
   font-weight: 400;
   margin-top: 40px;
-  opacity: 80%;
+  /* opacity: 80%; */
+  color: #534f4f;
 }
 #first_div > #first_div_mid_part > button {
   background-color: #8f304c;
@@ -314,14 +322,15 @@ display : none;
 #NOfees > img{
   width: 6%;
   margin-right: 5px;
-  transform: rotate(15deg);
+  /* transform: rotate(15deg); */
 }
 #NOfees > p {
   text-align: center;
   margin-left: 15px;
   font-size: 25px;
   font-weight: 500;
-  opacity: 80%;
+  /* opacity: 80%; */
+  color: #484646;
 }
 #NOfees > p + p {
   opacity: 0.7;

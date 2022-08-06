@@ -40,6 +40,17 @@ document.querySelector(".signupbtn").addEventListener("click", function () {
 document.querySelector(".fundraiserbtn").addEventListener("click", function () {
   location.href = "fundRaiser/fund.html";
 });
+document
+  .querySelector(".fundraiserbtn2")
+  .addEventListener("click", function () {
+    location.href = "fundRaiser/fund.html";
+  });
+document.querySelector(".seeMorebtn").addEventListener("click", function () {
+  location.href = "donate/donate.html";
+});
+document.querySelector(".reviewPagebtn").addEventListener("click", function () {
+  location.href = "review.html";
+});
 
 var category1 = document.getElementById("category1");
 var category2 = document.getElementById("category2");
