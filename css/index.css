@@ -1,4 +1,5 @@
 
+
 /* @media screen and (min-width: 720px) and (max-width:1024px){
 
 
@@ -69,10 +70,12 @@
 #first_div > #first_div_mid_part > #rai {
   font-size: 22px;
   width: 40%;
-  font-weight: 400;
+  font-weight: 500;
   margin-top: 40px;
-  /* opacity: 80%; */
+
   color: #474747;
+  color: rgba(0, 0, 0, 0.582);
+
 }
 
 #first_div > #first_div_mid_part > button {
@@ -152,6 +155,9 @@
   font-weight: 500;
   /* opacity: 80%; */
   color: #7b7676;
+
+  color: #2121219d;
+
 }
 
 #NOfees > p + p {

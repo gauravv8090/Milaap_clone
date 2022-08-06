@@ -1,9 +1,21 @@
+document.getElementById("LOSINIMG").addEventListener("click", LOginFUN);
+var ddaa = document.getElementById("LOSIN");
+function LOginFUN() {
+  if (ddaa.style.display === "none") {
+    ddaa.style.display = "flex";
+    ddaa.style.justifyContent = "space-around";
+    // ddaa.style.margin= "0";
+    ddaa.style.paddingTop = "15px";
+  } else {
+    ddaa.style.display = "none";
+  }
+}
 document.querySelector(".homebtn").addEventListener("click", function () {
   location.href = "index.html";
 });
 
 document.querySelector(".donatebtn").addEventListener("click", function () {
-  location.href = "donate.html";
+  location.href = "donate/donate.html";
 });
 
 document.querySelector(".reviewbtn").addEventListener("click", function () {
