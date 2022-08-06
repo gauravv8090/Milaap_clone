@@ -16,48 +16,51 @@
 
     <div id="parent">
         <div id="navLeft">
-            <div>
-                <img src="https://assets.milaap.org/assets/milaap-logo-tiny-4d3dbc4e55c2aaec351f0f376329c624236c4d6266b910f472684e70603f600d.png"
-                    alt="milapLogo">
-            </div>
-            <div>
-                <button class="navbtn"><a>Home</a></button>
-            </div>
-            <div>
-                <button class="navbtn">Donate</button>
-            </div>
-            <div>
-                <button class="navbtn">Lend</button>
-            </div>
-            <div>
-                <button class="navbtn">Pricing</button>
-            </div>
-            <div>
-                <button class="navbtn">Contact us</button>
-            </div>
-            <div>
-                <input type="checkbox" id="switch" class="checkbox" />
-                <label for="switch" class="toggle">
-                    <p id="ind"> &nbsp  INR &nbsp  &nbsp USD  </p>
-                </label>
-
-            </div>
+          <div>
+            <img
+              src="https://assets.milaap.org/assets/milaap-logo-tiny-4d3dbc4e55c2aaec351f0f376329c624236c4d6266b910f472684e70603f600d.png"
+              alt="milapLogo"
+            />
+          </div>
+          <div>
+            <button class="navbtn homebtn"><a>Home</a></button>
+          </div>
+          <div>
+            <button class="navbtn donatebtn">Donate</button>
+          </div>
+          <div>
+            <button class="navbtn reviewbtn">Review</button>
+          </div>
+          <div>
+            <button class="navbtn pricingbtn">Pricing</button>
+          </div>
+          <div>
+            <button class="navbtn contactusbtn">Contact us</button>
+          </div>
+          <div>
+            <input type="checkbox" id="switch" class="checkbox" />
+            <label for="switch" class="toggle">
+              <p id="ind">&nbsp INR &nbsp &nbsp USD</p>
+            </label>
+          </div>
         </div>
         <div id="navRight">
-            <div>
-                <button>Start a fundraiser</button>
-            </div>
-            <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNTnKuFzx2Q3EqHYsrqQoVxWRxIu0A3pM8qADvlTxaHf2LCYJw"
-                    alt="logo" id="LOSINIMG">
-            </div>
-
+          <div>
+            <button>Start a fundraiser</button>
+          </div>
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNTnKuFzx2Q3EqHYsrqQoVxWRxIu0A3pM8qADvlTxaHf2LCYJw"
+              alt="logo"
+              id="LOSINIMG"
+            />
+          </div>
         </div>
-    </div>
-    <div id="LOSIN">
-        <div > <h5>Login</h5> </div>
-        <div ><h5>Register</h5> </div>
-    </div>
+      </div>
+      <div id="LOSIN">
+        <div><h5 class="loginbtn">Login</h5></div>
+        <div><h5 class="signupbtn">Register</h5></div>
+      </div>
 
     <!-- Top header search and other end here -->
     <div id="top">
@@ -81,7 +84,7 @@
     <!-- containerFirst start from here  -->
 
     <div id="containerFirst">
-        <div class="box">
+        <div class="box" id="divCLICK">
             <div>
                 <img src="image\rajeevKumar.jpg" alt="rajeevKumar">
             </div>
@@ -524,5 +527,11 @@
     }else{
         ddaa.style.display = "none";
     }
+    }
+
+    document.getElementById("divCLICK").addEventListener("click", changePage);
+
+    function changePage() {
+        location.href="divSection/div1.html";
     }
 </script>
