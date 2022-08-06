@@ -10,7 +10,7 @@ document.querySelector(".reviewbtn").addEventListener("click", function () {
 });
 
 document.querySelector(".pricingbtn").addEventListener("click", function () {
-  location.href = "../pricing.html";
+  location.href = "../pricing/pricing.html";
 });
 
 document.querySelector(".contactusbtn").addEventListener("click", function () {
@@ -23,6 +23,9 @@ document.querySelector(".loginbtn").addEventListener("click", function () {
 
 document.querySelector(".signupbtn").addEventListener("click", function () {
   location.href = "../SignUp.html";
+});
+document.querySelector(".fundraiserbtn").addEventListener("click", function () {
+  location.href = "../fundRaiser/fund.html";
 });
 
 document.getElementById("LOSINIMG").addEventListener("click", LOginFUN);
