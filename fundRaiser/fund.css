@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* navbar------------------------- */
+
+#fund-nav {
+  box-shadow: rgba(204, 10, 152, 0.24) 0px 3px 8px;
+}
+#fund-nav > .fund-nav-content {
+  display: flex;
+  width: 80%;
+  margin-left: 5%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 19px;
+  padding: 15px;
+  font-weight: 200;
+
+}
+#fund-nav > .fund-nav-content > img {
+  height: 35px;
+}
+#fund-nav-2 {
+  width: 12%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgb(250, 240, 250);
+  margin: auto;
+  border-radius: 0 0 5px 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+#fund-cause {
+  width: 30%;
+  /* background-color: red; */
+  margin: 30px auto;
+  text-align: center;
+  display: flex;
+  /* justify-content: space-around; */
+}
+#fund-cause label {
+  padding: 0 20px;
+}
+#fund-cause a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 0.1px solid #aca7a7;
+  padding: 0 15px;
+}
+.trangle {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #5d5d5d;
+  position: absolute;
+  top: 140px;
+  left: 57%;
+}
+#fund-cause-2{
+    width: 30%;
+    margin: auto;
+    /* border: 1px solid red;    */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+}
+.fund-cause-2-content{
+    display: flex;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    justify-content: center;
+    padding: 15PX 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ .fund-cause-2-content:active{
+  background-color: #691a47;
+  color: #fff;
+}
+.fund-cause-2-icon{
+    height: 20px;
+    padding: 0 15px;
+}
+
+
+/* for form section */
+#fund-form{
+  width: 35%;
+  margin: 50px auto 5px auto;
+  /* border: 1px solid red; */
+  padding: 20px;
+}
+#fund-form > input[type="text"] ,input[type="email"],input[type="tel"]{
+  width:90%;
+  padding: 2px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  margin-bottom:30px;
+}
+#fund-form > label{
+  margin: 5px;
+}
+#fund-select-country{
+  outline: none;
+  border: none;
+
+}
+.material-symbols-outlined{
+  color: white;
+}
+
+#fund-submit{
+  width: 35%;
+  margin: auto;
+  /* border: 1px solid red; */
+  text-align: center;
+}
+#fund-submit-button{
+  padding: 10px 35px;
+  margin-bottom: 20px;
+  border-radius:10px;
+  background-color: #691a47;
+  color: white;
+}
+#fund-submit-button:hover{
+  background-color:#570031 ;
+}

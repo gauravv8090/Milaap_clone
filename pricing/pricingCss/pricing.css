@@ -1,0 +1,528 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* pricing-banner section -----------------------------*/
+#pricing-banner {
+  /* padding-top: 70px; */
+
+  /* border: 1px solid red; */
+  height: 300px;
+  /* width: 50%;  */
+  display: flex;
+  flex-direction: column;
+  margin-left: 50%;
+  /* margin-top: vh; */
+  padding-top: 10%;
+  justify-content: space-around;
+  color: white;
+  font-size: larger;
+}
+#pricing-banner > .banner-help {
+  display: flex;
+  font-size: 30px;
+}
+
+#pricing-banner > .banner-help > .banner-zero-percent {
+  height: 60px;
+}
+
+#pricing-banner > .pricing-banner-decrip {
+  font-size: 25px;
+  padding: 15px;
+  width: 90%;
+  line-height: 35px;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+#pricing-banner > .pricing-banner-fundraiser {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  background-color: #fff;
+  width: 200px;
+  margin-top: 20px;
+  padding: 10px;
+  text-decoration: none;
+  color: #9c3353;
+  text-align: center;
+  cursor: pointer;
+}
+#pricing-banner::before {
+  content: "";
+  /* background: url("../pricing/img/svg/svg2.svg") no-repeat center
+    center/cover; */
+  background: url(/Milaap_clone/pricing/img/svg/svg2.svg) no-repeat;
+  background-color: #9c3353;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 400px;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+ margin-top: 70px;             /*   new   */
+}
+
+
+/* pricing calculator ---------------------------------*/
+#pricing-calculator {
+  /* height: 400px; */
+
+  margin-top: 80px;
+  text-align: center;
+}
+#pricing-calculator > .pricing-calculator-up >h1{
+  margin: 30px;
+  font-size: 35px;
+}
+#pricing-calculator > .pricing-calculator-up > p{
+  margin: 30px;
+}
+ 
+#pricing-calculator >.pricing-calculator-mid{
+  height: 100px;
+  width: 40%;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#pricing-calculator >.pricing-calculator-mid >.mid-child{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+#pricing-calculator >.pricing-calculator-mid >.mid-child >.mid-child-2{
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  padding:0  20px;
+}
+
+#slider-value{
+  border: 1px solid rgb(238, 232, 232);
+  width: 80px;
+}
+
+#pricing-calculator > .pricing-calculator-down{
+  height: 100px;
+  width: 40%;
+  margin: 30px auto;
+  background-color:#9c3353;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+#pricing-calculator > .pricing-calculator-down button{
+  height: 35px;
+  width: 45%;
+  margin-top:35px;
+  border-radius: 20px;
+  border: 0;
+  color: #9c3353;
+}
+
+ /* for hide part by js ------------------- */
+ #pricing-hide-part{
+  width: 100%;
+  background-color: #9c3353;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 15px;
+ }
+
+ .pricing-totle-left-des-1 ,.pricing-totle{
+  padding: 20px;
+ }
+ #pricing-totle{
+  margin-left: 15%;
+  font-size: 40px;
+ }
+
+ .pricing-totle-right-content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+ }
+
+
+
+
+
+/* for input range ----------------------------------------- */
+input[type="range"]{
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  width: 80%;
+  margin: auto;
+  height: 8px;
+  background-color: #d5d5d5;
+  border-radius: 8px;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track{
+  -webkit-appearance: none;
+  height: 8px;
+}
+input[type="range"]::-moz-track{
+  -moz-appearance: none;
+  height: 8px;
+}
+input[type="range"]::-ms-track{
+  appearance: none;
+  height: 8px;
+}
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: #3264fe;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -6px;
+  border: none;
+}
+input[type="range"]::-moz-range-thumb{
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: #3264fe;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -6px;
+  border: none;
+}
+input[type="range"]::-ms-thumb{
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: #3264fe;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -6px;
+  border: none;
+}
+input[type="range"]:active::-webkit-slider-thumb{
+  background-color: #ffffff;
+  border: 3px solid #3264fe;
+}
+
+/* why choose milap section---------------------------------- */
+
+#why-choose-milap {
+  background-color: #b5dcd7;
+}
+#why-choose-milap > .choose-milap-heading {
+  text-align: center;
+  color: #212121;
+  font-size: 30px;
+  padding: 30px 15px;
+  margin: 0;
+}
+#why-choose-milap > .choose-milap-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+#why-choose-milap > .choose-milap-box > .choose-milap-img {
+  background: url(/Milaap_clone/pricing/img/svg/svg4.svg) no-repeat left bottom;
+  height: 500px;
+  width: 400px;
+}
+
+#why-choose-milap
+  > .choose-milap-box
+  > .choose-milap-img
+  > .choose-milap-card-item {
+  border: 2px dotted rgb(180, 176, 176);
+  background-color: white;
+  border-radius: 10px;
+  width: 90%;
+}
+#why-choose-milap
+  > .choose-milap-box
+  > .choose-milap-img
+  > .choose-milap-card-item
+  > .title {
+  display: flex;
+  border-bottom: 2px dotted rgb(180, 176, 176);
+  margin: 10px 0;
+}
+#why-choose-milap
+  > .choose-milap-box
+  > .choose-milap-img
+  > .choose-milap-card-item
+  > .title
+  > .icon {
+  height: 30px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+
+}
+#why-choose-milap
+  > .choose-milap-box
+  > .choose-milap-img
+  > .choose-milap-card-item
+  > .title
+  > span {
+  margin: auto;
+}
+#why-choose-milap
+  > .choose-milap-box
+  > .choose-milap-img
+  > .choose-milap-card-item
+  > .description {
+  padding: 15px;
+  text-align: center;
+}
+#why-choose-milap > .choose-milap-box > .choose-milap-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 60%;
+  /* margin-left: 10%; */
+  gap: 20px;
+}
+#why-choose-milap
+  > .choose-milap-box
+  > .choose-milap-card
+  > .choose-milap-card-item {
+  border: 2px dotted rgb(180, 176, 176);
+  border-radius: 10px;
+  background-color: #fff;
+}
+#why-choose-milap
+  > .choose-milap-box
+  > .choose-milap-card
+  > .choose-milap-card-item
+  > .title {
+  display: flex;
+  border-bottom: 2px dotted rgb(180, 176, 176);
+  margin: 10px 0;
+  align-items: center;
+}
+#why-choose-milap
+  > .choose-milap-box
+  > .choose-milap-card
+  > .choose-milap-card-item
+  > .title
+  > .icon {
+  height: 30px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+#why-choose-milap
+  > .choose-milap-box
+  > .choose-milap-card
+  > .choose-milap-card-item
+  > .title
+  > span {
+  margin: auto;
+}
+#why-choose-milap
+  > .choose-milap-box
+  > .choose-milap-card
+  > .choose-milap-card-item
+  > .description {
+  padding: 10px;
+  text-align: center;
+}
+#why-choose-milap a {
+  margin-left: 10%;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  background-color: #9c3353;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* about milaap */
+#pricing-about-milap {
+  height: 100px;
+  width: 100%;
+  background-color: #9c3353;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  /* margin-top: 15px; */
+}
+#pricing-about-milap > .pricing-about-milap-heading {
+  margin: auto;
+}
+
+/* FAQ section---------------------------------------- */
+
+#pricing-faq {
+
+  width: 80%;
+  margin: 40px auto;
+  
+}
+#pricing-faq hr{
+  width: 20%;
+  margin-left: 2%;
+}
+#pricing-faq > h2{
+  margin: 30px 0;
+  font-size: 25px;
+
+}
+#pricing-faq .pricing-faq-summary {
+  list-style: none;
+  padding: 20px;
+
+}
+#pricing-faq > .pricing-faq-detail-1 > .faq-details > p{ 
+  margin: 20px;
+}
+#pricing-faq > .pricing-faq-detail-2 > .faq-details > p{ 
+  margin: 20px;
+}
+#pricing-faq > .pricing-faq-detail-2 > .faq-details-more{
+  margin: 20px;
+}
+#pricing-faq > .pricing-faq-detail-3 > .faq-details > p{ 
+  margin: 20px;
+}
+#pricing-faq > .pricing-faq-detail-4 > .faq-details > p{ 
+  margin: 20px;
+}
+
+
+
+/* Media Quary----------------------------------- */
+
+/* medium screen */
+@media all and (min-width: 451px) and (max-width: 750px) {
+  /* #pricing-banner{
+    height: 200px;
+  } */
+  #pricing-banner > .pricing-mainTitle{
+    font-size: 15px;
+  }
+  #pricing-banner > .banner-help {
+    font-size: 15px;
+  }
+  #pricing-banner > .pricing-banner-decrip {
+    font-size: 15px;
+    padding: 10px;
+    width: 90%;
+    line-height: 25px;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+  }
+  #pricing-banner > .banner-help > .banner-zero-percent {
+    height: 40px;
+  }
+
+  #pricing-banner > .pricing-banner-fundraiser {
+    border: 1px solid #fff;
+    border-radius: 35px;
+    background-color: #fff;
+    width: 100px;
+    margin-top: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: #9c3353;
+    text-align: center;
+    font-size: 13px;
+  }
+  #pricing-hide-part{
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+   }
+   #pricing-totle{
+    font-size: 20px;
+   }
+   .pricing-totle-right-content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+   }
+   #why-choose-milap > .choose-milap-box > .choose-milap-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+  #why-choose-milap a {
+    /* margin-left: 15%; */
+    font-size: 15px;
+    padding: 7px 20px;
+  }
+
+
+  }
+
+
+  /* small screen */
+  @media all and (min-width: 100px) and (max-width: 450px) {
+    /* #pricing-banner{
+      height: 150px;
+    } */
+    #pricing-banner > .pricing-mainTitle{
+      font-size: 10px;
+    }
+    #pricing-banner > .banner-help {
+      font-size: 8px;
+    }
+    #pricing-banner > .pricing-banner-decrip {
+      font-size: 10px;
+      padding: 5px;
+      width: 90%;
+      line-height: 15px;
+      border-bottom: 1px solid #fff;
+      border-top: 1px solid #fff;
+    }
+    #pricing-banner > .banner-help > .banner-zero-percent {
+      height: 20px;
+    }
+    #pricing-banner > .pricing-banner-fundraiser {
+      border: 1px solid #fff;
+      border-radius: 20px;
+      background-color: #fff;
+      width: 80px;
+      margin-top: 5px;
+      padding: 2px;
+      text-decoration: none;
+      color: #9c3353;
+      text-align: center;
+      font-size: 10px;
+    }
+
+    #pricing-hide-part{
+      font-size: 15px;
+      display: flex;
+      flex-wrap: wrap;
+     }
+     #pricing-totle{
+      font-size: 15px;
+     }
+     .pricing-totle-right-content{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 7px;
+     }
+     #why-choose-milap > .choose-milap-box > .choose-milap-card {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+    #why-choose-milap a {
+      font-size: 12px;
+      padding: 5px 15px;
+    }
+  
+    }
+
