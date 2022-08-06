@@ -15,7 +15,7 @@ document.querySelector(".homebtn").addEventListener("click", function () {
 });
 
 document.querySelector(".donatebtn").addEventListener("click", function () {
-  location.href = "donate.html";
+  location.href = "donate/donate.html";
 });
 
 document.querySelector(".reviewbtn").addEventListener("click", function () {
