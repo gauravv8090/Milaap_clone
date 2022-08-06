@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ * {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* navbar------------------------- */
+
+#fund-nav {
+  box-shadow: rgba(204, 10, 152, 0.24) 0px 3px 8px;
+}
+#fund-nav > .fund-nav-content {
+  display: flex;
+  width: 80%;
+  margin-left: 5%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 19px;
+  padding: 15px;
+  font-weight: 200;
+
+}
+#fund-nav > .fund-nav-content > img {
+  height: 35px;
+}
+#fund-nav-2 {
+  width: 12%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgb(250, 240, 250);
+  margin: auto;
+  border-radius: 0 0 5px 5px;
+  padding: 10px;
+  text-align: center;
+}
+#fund4-cover-form{
+  width: 15%;
+
+  margin: 2.5% auto auto auto;
+  justify-content: center;
+  text-align: center;
+  /* border: 1px solid #9c3353; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 10px;
+}
+.fund4-cover-form-1{
+  margin-top: 20%;
+}
+.fund4-cover-form-1 > button{
+  padding: 3px;
+  border-radius: 50%;
+}
+.fund4-cover-form-1 > label{
+  padding: 5px;
+  border: 1px solid #9c3353;
+  background-color: #9c3353;
+  border-radius: 20px;
+
+}
+#fund4-hidden{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  /* border: 1px solid red; */
+  background-color: #9c3353;
+  color: white;
+  text-align: center; 
+display: none;
+}
+#fund4-hidden li{
+  list-style-type:none;
+  padding: 5px;
+}
+
+
+
+
+#fund4-textaria{
+  padding: 20px;
+width: 50%;
+margin-left: 25%;
+margin-top: 3%;
+background-color: antiquewhite;
+
+}
+    </style>
+</head>
+<body>
+        <nav id="fund-nav">
+        <div class="fund-nav-content">
+          <img src="/Milaap_clone/fundRaiser/img-fund/logo.png" alt="logo" />
+          <p>Setup fundraiser</p>
+        </div>
+      </nav>
+      <div id="fund-nav-2">
+        <p>Elaborate cause details</p>
+      </div>
+  <section id="fund4-cover-form">
+    <div class="fund4-cover-form-1">
+      <button id="fund4-cover-button" onclick="displayHide()">!</button>
+<label for="fund4-cover">update cover photo <input type="file" name="" style="visibility:hidden; display: none;" id="fund4-cover"> </label>
+    </div>
+    <div><img src="https://cimages.milaap.org/milaap/image/upload/c_fill,g_faces,h_165,w_220/v1553587825/production/images/category/5/image_1553587824.jpg" height="130x" width="100%" alt="coverImage"></div>
+  </section>
+
+<section>
+
+  <textarea name="" id="fund4-textaria" cols="30" rows="10" placeholder="Write somethig for any suggestion"></textarea>
+  
+  <button id="fund4-cover-send">Send</button>
+</section>
+ 
+      <section id="fund4-hidden">
+        <h4>Tips & Guidelines</h4>
+        <ol >
+          <li>Capture photos that focus on the subject in the natural ambience</li>
+          <li>Photos should have a minimum resolution of 640*480</li>
+          <li>Photo size should not be more than 5 MB</li>
+          <li>Supported photo formats are JPG, JPEG and PNG</li>
+        </ol>
+
+      </section>
+</body>
+</html>
+
+<script>
+
+  document.getElementById("fund4-cover-send").addEventListener("click" ,send)
+  function send(){
+    alert("Thankyou for giving suggestion")
+  }
+          function displayHide(){
+    var displayBtn=document.getElementById("fund4-cover-button");
+    var display = document.getElementById("fund4-hidden");
+
+    if(display.style.display != 'none'){
+      display.style.display = 'none'
+    }else{
+      display.style.display = "block"
+    }
+  }
+</script>
