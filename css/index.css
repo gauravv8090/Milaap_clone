@@ -9,6 +9,9 @@
   display: flex;
   justify-content: space-between;
   box-shadow: #f9e6ec 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  position: fixed;
+  background-color: white;
+
 
 }
 
@@ -191,9 +194,11 @@ display : none;
   margin-left: 86.5%;
   display: none;
   /* border: 1px solid red; */
-  margin-top: -0.5%;
+  margin-top: 70px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: fixed;
+
 
 }
 #LOSIN>div{
@@ -211,6 +216,14 @@ display : none;
   font-weight: 400;
   font-size: medium;
   color: #982346;
+}
+
+/* @media screen and (min-width: 720px) and (max-width:1024px){
+} */
+@media screen and (max-width:1100px){
+  #navRight>div{
+      display: none;
+  }
 }
 
 /* @media screen and (min-width: 720px) and (max-width:1024px){
@@ -283,9 +296,10 @@ display : none;
 #first_div > #first_div_mid_part > #rai {
   font-size: 22px;
   width: 40%;
-  font-weight: 400;
+  font-weight: 500;
   margin-top: 40px;
-  opacity: 80%;
+  color: rgba(0, 0, 0, 0.582);
+  /* opacity: 80%; */
 }
 
 #first_div > #first_div_mid_part > button {
@@ -354,7 +368,7 @@ display : none;
 #NOfees > img{
   width: 6%;
   margin-right: 5px;
-  transform: rotate(15deg);
+  /* transform: rotate(15deg); */
 }
 
 
@@ -363,7 +377,8 @@ display : none;
   margin-left: 15px;
   font-size: 25px;
   font-weight: 500;
-  opacity: 80%;
+  /* opacity: 80%; */
+  color: #2121219d;
 }
 
 #NOfees > p + p {
