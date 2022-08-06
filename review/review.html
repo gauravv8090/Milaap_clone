@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+        integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Reviews</title>
+    <style>
+        * {
+            background-color: #f5f1f1;
+            margin: 0;
+        }
+
+        #h1Tag>h1{
+            text-align: center;
+            font-weight: 140;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        #content>p {
+            margin-left: 380px;
+            text-align: center;
+            width: 50%;
+            font-size: 22px;
+            line-height: 28px;
+            color: #5d5d5d;
+            font-family: AvenirLTPro-Medium;
+        }
+
+        #review_img>img {
+            width: 50%;
+            height: 395px;
+            margin-left: 380px;
+            border-radius: 10px;
+        }
+
+        #discription>p {
+            width: 50%;
+            font-style: italic;
+            margin-left: 380px;
+            margin-top: 20px;
+            color: #5d5d5d;
+            font-weight: lighter;
+
+        }
+
+        .reviews>div {
+            border: 1px solid #e7acbe;
+            width: 55%;
+            height: 160px;
+            margin-left: 350px;
+            border-top-right-radius: 40px;
+            border-top-left-radius: 8px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 40px;
+            gap: 10px;
+            margin-top: 20px;
+            padding-left: 30px;
+            padding-top: 18px;
+            box-shadow: #f5f1f1(242, 212, 225, 0.2) 0px 7px 29px 0px;
+
+        }
+
+        .checked {
+            color: rgb(117, 228, 21);
+            width: 20px;
+            height: 40px;
+        }
+
+
+        #milaapR{
+            margin-top: -13px;
+            font-weight: lighter;
+        }
+
+        #row {
+            border-color: #f5f1f1;
+        }
+
+        .side {
+            float: left;
+            width: 15%;
+            margin-top: 10px;
+        }
+
+        .middle {
+            margin-top: 10px;
+            float: left;
+            width: 70%;
+        }
+
+        .bar-container {
+            width: 55%;
+            background-color: #f1f1f1;
+            text-align: center;
+            color: white;
+        }
+
+        /* Individual bars */
+        .bar-5 {
+            width: 60%;
+            height: 10px;
+            background-color: rgb(117, 228, 21);
+        }
+
+        .bar-4 {
+            width: 30%;
+            height: 10px;
+            background-color: rgb(117, 228, 21);
+        }
+
+        .bar-3 {
+            width: 10%;
+            height: 10px;
+            background-color: rgb(117, 228, 21);
+        }
+
+        .bar-2 {
+            width: 4%;
+            height: 10px;
+            background-color: rgb(117, 228, 21);
+        }
+
+        .bar-1 {
+            width: 4%;
+            height: 10px;
+            background-color: rgb(117, 228, 21);
+        }
+
+        .cool {
+            color: rgb(117, 228, 21);
+            ;
+        }
+
+        #font {
+            font-size: 16px;
+        }
+
+        .h2Tag {
+            font-size: 19px;
+            font-weight: 320;
+        }
+
+        #allreviews>p {
+            margin-top: 20px;
+            margin-left: 690px;
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 16px;
+            color: #9c3353;
+        }
+
+        #outerDiv {
+            width: 100%;
+            height: 150px;
+            border: 1px solid black;
+            margin-top: 30px;
+            font-style: #9c3353;
+            background-color: #9c3353;
+        }
+
+        #innerDiv {
+            height: 85px;
+            width: 90%;
+            border: 1px solid #9c3353;
+            background-color: #f1f1f1;
+            margin-top: 25.5px;
+            margin-bottom: 25%;
+            margin-left: 68px;
+            border-radius: 10px;
+        }
+
+        #innerDiv>div {
+            border: 1px solid black;
+            height: 55px;
+            width: 40%;
+            display: grid;
+            justify-content: space-around;
+        }
+
+        #emergency {
+            /* border: 2px dashed black; */
+            background-image: linear-gradient(90deg, #602747, #9A3252);
+            display: grid;
+            padding: 40px;
+            margin-top: 20px;
+        }
+
+        #emergency>div {
+            /* border: 2px solid red; */
+            background-color: white;
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: auto;
+            padding: 0px 50px;
+            align-items: center;
+        }
+
+        #emergency>div> :nth-child(1) {
+            /* border: 2px dashed green; */
+            padding: 0px 20px;
+            font-size: large;
+            text-align: center;
+        }
+
+        #emergency>div> :nth-child(2) {
+            /* border: 2px dashed green; */
+            margin: auto;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        #emergency>div> :nth-child(2)>button {
+            background-color: #9C3353;
+            border: none;
+            color: white;
+            border-radius: 40px;
+            padding: 10px 30px;
+            font-size: 20px;
+        }
+
+        @media screen and (min-width: 0px) and (max-width: 719px) {
+            #emergency>div {
+                grid-template-columns: repeat(1, 1fr);
+                margin-left: -20px;
+            }
+
+            #emergency>div> :nth-child(2) {
+                /* border: 2px solid black; */
+                margin-bottom: 20px;
+
+            }
+
+            #emergency>div> :nth-child(2)>button {
+                padding: 10px;
+                font-size: medium;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wholeDiv">
+        <div id="h1Tag">
+            <h1>Milaap Reviews</h1>
+        </div>
+        <div id="content">
+            <p>
+                Milaap is India's leading free crowdfunding platform for personal and social causes. Over Rs.1100+
+                Crores raised for 290,000+ projects across India. Take a look at the reviews shared by those who have
+                used Milaap.
+            </p>
+        </div>
+        <div id="review_img">
+            <img src="https://images.milaap.org/milaap/image/upload/v1614165210/production/entity_details/milaap_page/11151/Screenshot_2021-02-24_at_4.37.30_PM_1614165208.png?format=jpg"
+                alt="reviewPic">
+        </div>
+        <div id="discription">
+            <p>
+                Srabasti is a secondary school teacher and had missed work due to this rare condition. Her salary was
+                not covering the costs of ongoing IVIG and surgery. She raised funds for her treatment through Milaap.
+                She raised Rs.1,576,835 from 285 supporters.
+            </p>
+        </div>
+        <div class="reviews">
+            <div id="row">
+                <div class="side">
+                    <div id="font">5 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-5"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div class="cool">19,417</div>
+                </div>
+                <div class="side">
+                    <div id="font">4 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-4"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div class="cool">5,372</div>
+                </div>
+                <div class="side">
+                    <div id="font">3 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-3"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div class="cool">2,686</div>
+                </div>
+                <div class="side">
+                    <div id="font">2 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-2"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div class="cool">8,08</div>
+                </div>
+                <div class="side">
+                    <div id="font">1 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                        <div class="bar-1"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div class="cool">1,022</div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="h2Tag">Help me for my sons basic school education</h2>
+                <p>Created by: &nbsp Vikesh &nbsp Aug 02, 2022</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <div>
+                <h2 class="h2Tag">Sanasamma</h2>
+                <p>Created by:&nbspAmarnath &nbsp Aug 02, 2022</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <div>
+                <h2 class="h2Tag">Help Create a Safe Space for the Women & Children of Tughlaqabad</h2>
+                <p>Created by: &nbsp Mrinalinee &nbsp Aug 02, 2022</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <div>
+                <h2 class="h2Tag">Help Roadside Romeos and Juilets of Lucknow</h2>
+                <p>Created by: &nbsp Shailja &nbsp Aug 01, 2022</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <div>
+                <h2 class="h2Tag">Support Rajeev Kumar To Recover From Severe Traumatic Brain Injury</h2>
+                <p>Created by: &nbsp Shiv &nbsp Aug 01, 2022</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <div>
+                <h2 class="h2Tag">Help us raise funds for community animals in critical medical care</h2>
+                <p>Created by: &nbsp Vasundhara &nbsp Aug 01, 2022</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <div id="loveMilaap">
+                <h2 class="h2Tag">Please help to solve problems through genuine knowledge</h2>
+                <p>Created by: &nbsp Saurabh &nbsp Aug 01, 2022</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <h4 id="milaapR">I love Milaap</h4>
+            </div>
+            <div id="loveMilaap">
+                <h2 class="h2Tag">Help To Get Stray Cats Sterilized</h2>
+                <p>Created by:&nbsp Omkar &nbsp Aug 01, 2022</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span></span>
+                <h4 id="milaapR">I love Milaap</h4>
+            </div>
+            <div id="loveMilaap">
+                <h2 class="h2Tag">Please Help Us Feed Stray Animals</h2>
+                <p>Created by: &nbsp Omkar &nbsp Aug 01, 2022</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <h4 id="milaapR">I love Milaap</h4>
+            </div>
+            <div>
+                <h2 class="h2Tag">Help to save sweet and innocent Kaalu's life</h2>
+                <p>Created by: &nbsp Omkar &nbspJul 31, 2022</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <h4 id="milaapR">I love Milaap</h4>
+            </div>
+
+        </div>
+        <div id="allreviews">
+            <p>See all reviews</p>
+        </div>
+        <div id="emergency">
+            <div>
+                <div>
+                    <h3>Do you want to raise funds for a medical emergency?</h3>
+                </div>
+                <div>
+                    <button>Start a fundraiser</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
