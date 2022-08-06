@@ -22,5 +22,5 @@ document.querySelector(".loginbtn").addEventListener("click", function () {
 });
 
 document.querySelector(".signupbtn").addEventListener("click", function () {
-  location.href = "SignUp.html";
+  location.href = "../SignUp.html";
 });
