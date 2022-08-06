@@ -90,14 +90,33 @@
     margin: 20px 15px;
     padding: 10px 50px 10px 10px;
 }
-
+#containerFirst > .box > :nth-child(5) {
+    margin-left: 180px;
+}
+#containerFirst > .box > :nth-child(5) > button {
+    background-color: #812742;
+    border: none;
+    color: white;
+    border-radius: 40px;
+    padding: 10px 80px;
+    font-size: 25px;
+}
+#containerFirst > .box > :nth-child(6) {
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    padding: 20px;
+}
+#containerFirst > .box > :nth-child(6) > p {
+    line-height: 25px;
+}
 
 
 /* box2 section  */
 
 #sideBox {
     /* border: 2px solid blueviolet; */
-    padding: 10px;
+    padding-left: 680px;
+    position: fixed;
 }
 #sideBox > .box2 {
     /* border: 2px dashed green; */
@@ -150,7 +169,7 @@
     margin: 20px 15px;
     padding: 10px 50px 10px 10px;
 }
-#sideBox > .box2 > :nth-child(4) > button {
+#sideBox > .box2 > :nth-child(4)> a > button {
     background-color: #812742;
     border: none;
     color: white;
@@ -170,6 +189,10 @@
     color: #9C3353;
 }
 #sideBox > .box2 > :nth-child(6) {
-    /* width: 400px; */
+    /* border: 2px solid red; */
+    /* width: 60%; */
     margin: 30px;
+}
+#sideBox > .box2 > :nth-child(6) img{
+    width: 50%;
 }

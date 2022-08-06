@@ -13,7 +13,7 @@
   display: flex;
   justify-content: space-between;
   box-shadow: #f9e6ec 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-
+  
 }
 
 #navLeft {
@@ -428,7 +428,7 @@ display : none;
 
 #middleBar > .midBox > div > div {
     height: 70px;
-    transition: 0.2s all ease-in-out;
+    transition: 0.02s all ease-in-out;
 }
 #middleBar > .midBox > div > div:active {
     transform: scale(1.02);

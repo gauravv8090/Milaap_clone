@@ -81,7 +81,7 @@
     <!-- containerFirst start from here  -->
 
     <div id="containerFirst">
-        <div class="box">
+        <div class="box" id="divCLICK">
             <div>
                 <img src="image\rajeevKumar.jpg" alt="rajeevKumar">
             </div>
@@ -524,5 +524,11 @@
     }else{
         ddaa.style.display = "none";
     }
+    }
+
+    document.getElementById("divCLICK").addEventListener("click", changePage);
+
+    function changePage() {
+        location.href="divSection/div1.html";
     }
 </script>
