@@ -27,6 +27,13 @@ document.querySelector(".signupbtn").addEventListener("click", function () {
 document.querySelector(".fundraiserbtn").addEventListener("click", function () {
   location.href = "../fundRaiser/fund.html";
 });
+document.querySelector("#ssss").addEventListener("click", function () {
+  location.href = "../fundRaiser/fund.html";
+});
+document.querySelector("#ssssd").addEventListener("click", function () {
+  location.href = "../fundRaiser/fund.html";
+});
+
 
 document.getElementById("LOSINIMG").addEventListener("click", LOginFUN);
 var ddaa = document.getElementById("LOSIN");

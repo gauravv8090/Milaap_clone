@@ -38,7 +38,7 @@ document.querySelector(".signupbtn").addEventListener("click", function () {
   location.href = "SignUp.html";
 });
 document.querySelector(".fundraiserbtn").addEventListener("click", function () {
-  location.href = "fundRaiser/fund.html";
+  location.href = "../fundRaiser/fund.html";
 });
 
 var doc = document.querySelectorAll(".yes");

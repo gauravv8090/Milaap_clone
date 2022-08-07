@@ -55,7 +55,7 @@ html {
   content: "";
   /* background: url("../pricing/img/svg/svg2.svg") no-repeat center
     center/cover; */
-  background: url(/Milaap_clone/pricing/img/svg/svg2.svg) no-repeat;
+  background: url(/pricing/img/svg/svg2.svg) no-repeat;
   background-color: #9c3353;
   position: absolute;
   top: 0px;
@@ -233,7 +233,7 @@ input[type="range"]:active::-webkit-slider-thumb{
   justify-content: space-evenly;
 }
 #why-choose-milap > .choose-milap-box > .choose-milap-img {
-  background: url(/Milaap_clone/pricing/img/svg/svg4.svg) no-repeat left bottom;
+  background: url(/pricing/img/svg/svg4.svg) no-repeat left bottom;
   height: 500px;
   width: 400px;
 }
