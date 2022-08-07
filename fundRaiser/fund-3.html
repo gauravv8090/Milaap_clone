@@ -232,7 +232,7 @@ html {
       </section>
       <section id="fund3-form-button">
         <button> <a href="/Milaap_clone/fundRaiser/fund-2.html"> Back</a></button>
-        <button> <a href="/Milaap_clone/fundRaiser/fund4.html">Next</a></button>
+        <button> <a href="/Milaap_clone/fundRaiser/fund4.html" id="fund3-submit">Submit</a></button>
       </section>
 
       <!-- <span id="spanDate"></span> -->
@@ -249,11 +249,8 @@ html {
     document.getElementById("change").innerHTML = "Hello World";
     console.log("dfhd");
   }
+document.querySelector("#fund3-submit").addEventListener("click", lastfun);
+function lastfun(){
+  alert("Fundraiser has been registered ")
+}
 </script>
-<!-- <script type="text/javascript">
-    var months = ['January','February','March','April','May','June','July',
-'August','September','October','November','December'];       
-var tomorrow = new Date();
-tomorrow.setTime(tomorrow.getTime() + (1000*3600*24));       
-document.getElementById("spanDate").innerHTML = months[tomorrow.getMonth()] + " " + tomorrow.getDate()+ ", " + tomorrow.getFullYear();
-</script> -->
