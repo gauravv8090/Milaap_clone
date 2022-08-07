@@ -202,8 +202,9 @@ display : none;
   background-image: url('https://icudata.nl/assets/img/icucartoon.jpg');
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 45%;
-  background-position-y: bottom;
+  background-size: 50%;
+  background-position-x: 100%;
+  background-position-y: 100%;
   padding-bottom: 12px;
   padding-top: 80px;
 }
@@ -222,9 +223,9 @@ display : none;
   vertical-align: middle;
 }
 #first_div > button {
-  width: 50%;
+  width: 60%;
   margin-top: 10px;
-  margin-left: 350px;
+  margin-left: 20%;
   vertical-align: middle;
   background-color: white;
   box-shadow: #e8cfd7 0px 3px 8px;
@@ -240,7 +241,7 @@ display : none;
   color: #5d5d5d;
 }
 #first_div > #first_div_mid_part {
-  margin-left: 160px;
+  margin-left: 10%;
 }
 #first_div > #first_div_mid_part > #milaap {
   color: #292828;
@@ -284,7 +285,7 @@ display : none;
 #numbers {
   display: flex;
   font-size: x-large;
-  margin-left: 150px;
+  margin-left: 10%;
   margin-top: 70px;
   
 }
@@ -338,10 +339,10 @@ display : none;
   font-size: 50px;
   color: #753057;
   right: 30px;
-  padding-left: 5px;
-  position: absolute;
+  padding-left: 6%;
+  /* position: absolute; */
   margin-top: 3px;
-  margin-right: 150px;
+  margin-right: -10%;
 }
 #fundraising_title > h1 {
   margin-top: 63px;
@@ -351,9 +352,10 @@ display : none;
   margin-bottom: 10px;
 }
 #box_design {
+  width: 30%;
   margin-top: 2px;
   display: flex;
-  margin-left: 520px;
+  margin: auto;
 }
 #box_design > #box1 {
   width: 23px;
@@ -964,4 +966,80 @@ display : none;
       grid-template-columns: repeat(1,1fr);
       width: 95%;
   }
+}
+
+
+@media screen and (max-width:480px) {
+  #first_div{
+    background-image: none;
+  }
+  #NOfees >p{
+    font-size: 1rem;
+  }
+  #NOfees > p + p{
+    font-size: 2rem;
+    margin-right: 1%;
+  }
+  #categories {
+    width: 100%;
+    margin-left: 10%;
+  }
+  #searchInput{
+    width: 130%;
+  }
+  #appImage{
+    display: none;
+  }
+  #MilaapApp{
+    /* justify-content: space-between; */
+    /* padding: 0px; */
+    margin-left: 7%;
+  }
+  #containerFirst{
+    margin-left: 10%;
+  }
+  #fundraising_title{
+    margin-left: 10%;
+  }
+  #review_div{
+    margin-left: 10%;
+  }
+  #emergency{
+    margin-left: 10%;
+  }
+
+}
+
+@media screen and (min-width:481px) and (max-width: 768px){
+  #first_div{
+    background-position-y: 73%;
+  }
+  #categories {
+    width: 80%;
+  }
+  #NOfees >p{
+    font-size: 20px;
+  }
+  #NOfees > p + p{
+    font-size: 30px;
+    margin-right: 1%;
+  }
+  #MilaapApp{
+    /* justify-content: space-between; */
+    /* padding: 0px; */
+    margin-left: 2%;
+  }
+  #appImage img{
+    width: 80%;
+  }
+}
+@media screen and (min-width:769px) and (max-width:1024px) {
+  
+}
+@media screen and (min-width:1025px) and (max-width:1200px){
+  #first_div > button{
+    margin-left: 25%;
+    font-size: 17px;
+  }
+
 }
