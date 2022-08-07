@@ -16,8 +16,11 @@
 
     <style>
         * {
-            background-color: #f5f1f1;
+            /* background-color: #f5f1f1; */
             margin: 0;
+        }
+        #wholeDiv{
+          padding-top: 90px;
         }
 
         #h1Tag>h1{
@@ -188,7 +191,7 @@
             justify-content: space-around;
         }
 
-        #emergency {
+        #Emergency {
             /* border: 2px dashed black; */
             background-image: linear-gradient(90deg, #602747, #9A3252);
             display: grid;
@@ -196,7 +199,7 @@
             margin-top: 20px;
         }
 
-        #emergency>div {
+        #Emergency>div {
             /* border: 2px solid red; */
             background-color: white;
             border-radius: 20px;
@@ -207,21 +210,21 @@
             align-items: center;
         }
 
-        #emergency>div> :nth-child(1) {
+        #Emergency>div> :nth-child(1) {
             /* border: 2px dashed green; */
             padding: 0px 20px;
             font-size: large;
             text-align: center;
         }
 
-        #emergency>div> :nth-child(2) {
+        #Emergency>div> :nth-child(2) {
             /* border: 2px dashed green; */
             margin: auto;
             margin-top: 15px;
             margin-bottom: 15px;
         }
 
-        #emergency>div> :nth-child(2)>button {
+        #Emergency>div> :nth-child(2)>button {
             background-color: #9C3353;
             border: none;
             color: white;
@@ -231,18 +234,18 @@
         }
 
         @media screen and (min-width: 0px) and (max-width: 719px) {
-            #emergency>div {
+            #Emergency>div {
                 grid-template-columns: repeat(1, 1fr);
                 margin-left: -20px;
             }
 
-            #emergency>div> :nth-child(2) {
+            #Emergency>div> :nth-child(2) {
                 /* border: 2px solid black; */
                 margin-bottom: 20px;
 
             }
 
-            #emergency>div> :nth-child(2)>button {
+            #Emergency>div> :nth-child(2)>button {
                 padding: 10px;
                 font-size: medium;
                 margin: auto;
@@ -252,53 +255,54 @@
 </head>
 
 <body>
-    <!-- <div id="parent">
-        <div id="navLeft">
-          <div>
-            <img
-              src="https://assets.milaap.org/assets/milaap-logo-tiny-4d3dbc4e55c2aaec351f0f376329c624236c4d6266b910f472684e70603f600d.png"
-              alt="milapLogo"
-            />
-          </div>
-          <div>
-            <button class="navbtn homebtn"><a>Home</a></button>
-          </div>
-          <div>
-            <button class="navbtn donatebtn">Donate</button>
-          </div>
-          <div>
-            <button class="navbtn reviewbtn">Review</button>
-          </div>
-          <div>
-            <button class="navbtn pricingbtn">Pricing</button>
-          </div>
-          <div>
-            <button class="navbtn contactusbtn">Contact us</button>
-          </div>
-          <div>
-            <input type="checkbox" id="switch" class="checkbox" />
-            <label for="switch" class="toggle">
-              <p id="ind">&nbsp INR &nbsp &nbsp USD</p>
-            </label>
-          </div>
-        </div>
-        <div id="navRight">
-          <div>
-            <button>Start a fundraiser</button>
-          </div>
-          <div>
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNTnKuFzx2Q3EqHYsrqQoVxWRxIu0A3pM8qADvlTxaHf2LCYJw"
-              alt="logo"
-              id="LOSINIMG"
-            />
-          </div>
-        </div>
+  <div id="parent">
+    <div id="navLeft">
+      <div>
+        <img
+          src="https://assets.milaap.org/assets/milaap-logo-tiny-4d3dbc4e55c2aaec351f0f376329c624236c4d6266b910f472684e70603f600d.png"
+          alt="milapLogo"
+        />
       </div>
-      <div id="LOSIN">
-        <div><h5 class="loginbtn">Login</h5></div>
-        <div><h5 class="signupbtn">Register</h5></div>
-      </div> -->
+      <div>
+        <button class="navbtn homebtn"><a>Home</a></button>
+      </div>
+      <div>
+        <button class="navbtn donatebtn">Donate</button>
+      </div>
+      <div>
+        <button class="navbtn reviewbtn">Review</button>
+      </div>
+      <div>
+        <button class="navbtn pricingbtn">Pricing</button>
+      </div>
+      <div>
+        <button class="navbtn contactusbtn">Contact us</button>
+      </div>
+      <div>
+        <input type="checkbox" id="switch" class="checkbox" />
+        <label for="switch" class="toggle">
+          <p id="ind">&nbsp INR &nbsp &nbsp USD</p>
+        </label>
+      </div>
+    </div>
+    <div id="navRight">
+      <div>
+        <button>Start a fundraiser</button>
+      </div>
+      <div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNTnKuFzx2Q3EqHYsrqQoVxWRxIu0A3pM8qADvlTxaHf2LCYJw"
+          alt="logo"
+          id="LOSINIMG"
+        />
+      </div>
+    </div>
+  </div>
+  <div id="LOSIN">
+    <div><h5 class="loginbtn">Login</h5></div>
+    <div><h5 class="signupbtn">Register</h5></div>
+  </div>
+
     <div id="wholeDiv">
         <div id="h1Tag">
             <h1>Milaap Reviews</h1>
@@ -476,7 +480,7 @@
         <div id="allreviews">
             <p>See all reviews</p>
         </div>
-        <div id="emergency">
+        <div id="Emergency">
             <div>
                 <div>
                     <h3>Do you want to raise funds for a medical emergency?</h3>
@@ -636,3 +640,60 @@
 </body>
 
 </html>
+<script>
+  document.getElementById("LOSINIMG").addEventListener("click", LOginFUN);
+var ddaa = document.getElementById("LOSIN");
+function LOginFUN() {
+  if (ddaa.style.display === "none") {
+    ddaa.style.display = "flex";
+    ddaa.style.justifyContent = "space-around";
+    // ddaa.style.margin= "0";
+    ddaa.style.paddingTop = "15px";
+  } else {
+    ddaa.style.display = "none";
+  }
+}
+document.querySelector(".homebtn").addEventListener("click", function () {
+  location.href = "index.html";
+});
+
+document.querySelector(".donatebtn").addEventListener("click", function () {
+  location.href = "donate/donate.html";
+});
+
+document.querySelector(".reviewbtn").addEventListener("click", function () {
+  location.href = "review.html";
+});
+
+document.querySelector(".pricingbtn").addEventListener("click", function () {
+  location.href = "pricing/pricing.html";
+});
+
+document.querySelector(".contactusbtn").addEventListener("click", function () {
+  location.href = "contactUs.html";
+});
+
+document.querySelector(".loginbtn").addEventListener("click", function () {
+  location.href = "Signin.html";
+});
+
+document.querySelector(".signupbtn").addEventListener("click", function () {
+  location.href = "SignUp.html";
+});
+document.querySelector(".fundraiserbtn").addEventListener("click", function () {
+  location.href = "fundRaiser/fund.html";
+});
+document
+  .querySelector(".fundraiserbtn2")
+  .addEventListener("click", function () {
+    location.href = "fundRaiser/fund.html";
+  });
+document.querySelector(".seeMorebtn").addEventListener("click", function () {
+  location.href = "donate/donate.html";
+});
+document.querySelector(".reviewPagebtn").addEventListener("click", function () {
+  location.href = "review.html";
+});
+
+
+</script>
