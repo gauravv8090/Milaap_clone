@@ -18,4 +18,4 @@
    * SignUp, Login
    
 #Deployed Link
-* https://milaapclone.netlify.app/
+* https://milaapclone.netlify.app
